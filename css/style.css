@@ -1,0 +1,104 @@
+body {
+  color: white;
+  font-family: 'Lucida Grande', Helvetica, sans-serif; 
+  font-weight: 300;
+}
+
+#transition{
+  background: url('http://i.imgur.com/9zpA4vd.jpg');
+  width: 100%; 
+  height: 100%; 
+  position: fixed; 
+  left: 0px; 
+  top: 0px; 
+  z-index: -1;
+  display: none;
+}
+
+@media screen and (max-width: 275px) {
+    #logo {
+        width: 300px;
+    }
+    #sizing{
+      width: 100%;
+    }
+}
+
+#logo{
+  background: url('http://i.imgur.com/RzcWxMa.png?1');
+  margin-top: 2000px;
+}
+
+#twit{
+  margin-top: 2000px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 0px;
+}
+
+#linked{
+  margin-top: 2000px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 100px;
+}
+
+#git{
+  margin-top: 2000px;
+  display: inline-block;
+  position: absolute;
+  margin-left: -200px;
+}
+
+#mail{
+  margin-top: 2000px;
+  display: inline-block;
+  position: absolute;
+  margin-left: -100px;
+}
+
+#moving {
+font-size: 25px;
+color: rgba(0,0,0, .7);
+display: none;
+margin-top: 100px;
+}
+
+h1{
+  margin: -10px;
+  font-size: 100px;
+  font-family: 'Lato', sans-serif;
+  display: none;
+  color: rgba(0,0,0, .7);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+margin: 20px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.9s infinite;
+    -moz-animation: blink 0.9s infinite;
+    animation: blink 0.9s infinite;
+    display: none;
+    margin: 0;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
