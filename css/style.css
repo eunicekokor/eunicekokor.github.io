@@ -2,6 +2,7 @@ body {
   color: white;
   font-family: 'Lucida Grande', Helvetica, sans-serif; 
   font-weight: 300;
+  overflow: hidden;
 }
 
 #transition{
@@ -27,6 +28,10 @@ body {
 #logo{
   background: url('http://i.imgur.com/RzcWxMa.png?1');
   margin-top: 2000px;
+}
+
+#twit > a, #linked > a, #git > a, #mail > a {
+  color: #AAA;
 }
 
 #twit{
