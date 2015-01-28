@@ -1,5 +1,9 @@
 $(document).ready(function(){
+<<<<<<< HEAD
   console.log("Git Ready!");
+=======
+  console.log("github version is up and running!");
+>>>>>>> origin/gh-pages
   $('#transition').fadeIn(1000, function(){
     $('#logo').animate({'margin-top': '5%'}, 800, function(){
       $('h1').fadeIn(800, function(){ 
@@ -7,6 +11,7 @@ $(document).ready(function(){
           $('#linked').animate({'margin-top': '0px'}, 750);
          $('#git').animate({'margin-top': '0px'}, 1500, function(){
           $('#mail').animate({'margin-top': '0px'}, 500, function(){
+            $('#resume').animate({'margin-top': '0px'}, 750);
             $('#moving').fadeIn(750);
           });
           });
