@@ -11,6 +11,7 @@ $(document).ready(function(){
           $('#linked').animate({'margin-top': '0px'}, 750);
          $('#git').animate({'margin-top': '0px'}, 1500, function(){
           $('#mail').animate({'margin-top': '0px'}, 500, function(){
+            $('#resume').animate({'margin-top': '0px'}, 750);
             $('#moving').fadeIn(750);
           });
           });
