@@ -16,6 +16,11 @@ $(document).ready(function(){
                   $('#second').fadeIn(500);
                  });
               });
+              $('#second').hover(function(){
+                $('#second').fadeOut(1000, function(){
+                  $('#first').fadeIn(500);
+                 });
+              });
             });
           });
         });
