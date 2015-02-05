@@ -30,7 +30,7 @@ body {
   margin-top: 2000px;
 }
 
-#twit > a, #linked > a, #git > a, #mail > a {
+#twit > a, #linked > a, #git > a, #mail > a, #resume > a {
   color: #AAA;
 }
 
