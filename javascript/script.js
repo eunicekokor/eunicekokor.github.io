@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log("github version 4 ready.");
+  console.log("github version 5 ready.");
   
   $('#transition').fadeIn(1000, function(){
     $('#logo').animate({'margin-top': '5%'}, 800, function(){
