@@ -46,35 +46,35 @@ body {
   margin-top: 2000px;
   display: inline-block;
   position: absolute;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 #linked{
   margin-top: 2000px;
   display: inline-block;
   position: absolute;
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 #git{
   margin-top: 2000px;
   display: inline-block;
   position: absolute;
-  margin-left: -100px;
+  margin-left: -150px;
 }
 
 #mail{
   margin-top: 2000px;
   display: inline-block;
   position: absolute;
-  margin-left: 0px;
+  margin-left: -50px;
 }
 
 #resume{
 	margin-top: 2000px;
 	display: inline-block;
 	position: absolute;
-	margin-left: -200px;
+	margin-left: -250px;
 }
 
 #moving {
