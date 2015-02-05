@@ -5,6 +5,14 @@ body {
   overflow: hidden;
 }
 
+#first:hover{
+  -webkit-filter: blur(5px);
+}
+
+#second {
+  display: none;
+}
+
 #transition{
   background: url('http://i.imgur.com/9zpA4vd.jpg');
   width: 100%; 
