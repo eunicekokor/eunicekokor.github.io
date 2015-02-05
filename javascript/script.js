@@ -2,16 +2,16 @@ $(document).ready(function(){
   $('#transition').fadeIn(1000, function(){
     $('#logo').animate({'margin-top': '5%'}, 800, function(){
       $('h1').fadeIn(800, function(){ 
-         $('#twit').animate({'margin-top': '0'}, 500, function(){
+        $('#twit').animate({'margin-top': '0'}, 500, function(){
           $('#linked').animate({'margin-top': '0px'}, 750);
-         $('#git').animate({'margin-top': '0px'}, 1500, function(){
-          $('#mail').animate({'margin-top': '0px'}, 500, function(){
-            $('#resume').animate({'margin-top': '0px'}, 750);
-            $('#moving').fadeIn(750);
+          $('#git').animate({'margin-top': '0px'}, 1500, function(){
+            $('#mail').animate({'margin-top': '0px'}, 500, function(){
+              $('#resume').animate({'margin-top': '0px'}, 750);
+              $('#moving').fadeIn(750);
+            });
           });
-          });
-         });
-     });
+        });
+      });
     });
   });
   
