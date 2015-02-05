@@ -1,5 +1,9 @@
 $(document).ready(function(){
   console.log("github version 2 ready.");
+  $('h1').mouseenter(function(){
+    $('h1').blur();
+  });
+  
   $('#transition').fadeIn(1000, function(){
     $('#logo').animate({'margin-top': '5%'}, 800, function(){
       $('h1').fadeIn(800, function(){ 
@@ -24,23 +28,7 @@ $(function(){
         loop: true
       });
   });
-  var h1 = document.getElementById("h1");
-  blurElement(h1, 50);
-  
-  function blurElement(element, size) {
-     var filterVal = 'blur(' + size + 'px)';
-     $(element)
-         .css('filter', filterVal)
-         .css('webkitFilter', filterVal)
-         .css('mozFilter', filterVal)
-         .css('oFilter', filterVal)
-         .css('msFilter', filterVal)
-         .css('transition', 'all 0.5s ease-out')
-         .css('-webkit-transition', 'all 0.5s ease-out')
-         .css('-moz-transition', 'all 0.5s ease-out')
-         .css('-o-transition', 'all 0.5s ease-out');
 
- }
 /*var adjectives = ['Computer Science Student ^1000 @Columbia Engineering', 'STEM educator ^1000 & education advocate', 'technologist ^1000 who builds for sustainability', 'making a difference ^2000 through technology'];
 
 var para = $('#moving');
