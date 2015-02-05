@@ -24,6 +24,8 @@ $(function(){
         loop: true
       });
   });
+  var h1 = document.getElementById("h1");
+  blurElement(h1, 50);
   
   function blurElement(element, size) {
      var filterVal = 'blur(' + size + 'px)';
