@@ -5,7 +5,7 @@ body {
   overflow: hidden;
 }
 
-#first:hover{
+#special:hover{
   -webkit-filter: blur(5px);
 }
 
