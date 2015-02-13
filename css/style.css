@@ -32,12 +32,13 @@ body {
       width: 100%;
     }
     i {
-    	width: 50%;
-    	height: 50%;
+    	padding: 0px;
+    	margin: 0px;
     }
     p{
     	font-size: .5em;
     }
+    
 }
 
 #logo{
