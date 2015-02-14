@@ -154,6 +154,8 @@ margin: 20px;
 
      #logo {
      	top: 1rem;
+     	max-width: 60rem;
+     	max-height: 60rem;
      }
 }
 
