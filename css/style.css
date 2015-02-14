@@ -114,21 +114,28 @@ margin: 20px;
     100% { opacity:1; }
 }
 
-@media screen and (max-width: 275px) {
-    #logo {
-        width: 250px;
-    }
-    #sizing{
-      width: 100%;
-    }
-    i {
-    	display: block;
-    }
-    h1 {
-    	font-size: 1em;
-    }
-    p{
-    	font-size: .5em;
-    }
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+    width: 100%;   }
     
+    h1 {
+      font-size: 3rem;   }
+      .social {
+        height: 6rem;
+        position: relative;
+        max-width: 30rem;
+        margin: 1rem auto 0;   }
+        .social ul li {
+          font-size: 1rem;
+          margin: 0 0 2rem;
+          width: 30%;   }
+     #logo {
+     	top: 1rem;
+     }
+}
+
+@media only screen and (max-height: 320px) {
+  #logo {
+    top: 1rem;   }
 }
