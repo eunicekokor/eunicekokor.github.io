@@ -122,45 +122,38 @@ margin: 20px;
     h1 {
       font-size: 3rem;   }
       p{
-      	font-size: 1.2em;
+      	font-size: 10px;
       }
       
       #resume {
         height: 6rem;
-        margin-left: -175px;
+        margin-left: -150px;
         max-width: 30rem;
 	 }
 	 
 	#mail {
         height: 6rem;
-        margin-left: -75px;
+        margin-left: 50px;
         max-width: 30rem;
 	 }
 	 
 	 #git {
         height: 6rem;
-        margin-left: -125px;
+        margin-left: -100px;
         max-width: 30rem;
 	 }
 	 
 	 #linked {
         height: 6rem;
-        margin-left: 25px;
+        margin-left: 0px;
         max-width: 30rem;
 	 }
 	 
 	 #twit {
         height: 6rem;
-        margin-left: -25px;
+        margin-left: -50px;
         max-width: 30rem;
 	 }
-	 
-
-     #logo {
-     	top: 1em;
-     	height: auto;
-     	width: 250px;
-     }
 }
 
 @media only screen and (max-height: 320px) {
