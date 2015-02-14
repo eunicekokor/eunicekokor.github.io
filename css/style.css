@@ -121,15 +121,36 @@ margin: 20px;
     
     h1 {
       font-size: 3rem;   }
-      .social {
+      #resume {
         height: 6rem;
         position: relative;
         max-width: 30rem;
-        margin: 1rem auto 0;   }
-        .social ul li {
-          font-size: 1rem;
-          margin: 0 0 2rem;
-          width: 30%;   }
+	 }
+	 
+	#mail {
+        height: 6rem;
+        position: relative;
+        max-width: 30rem;
+	 }
+	 
+	 #git {
+        height: 6rem;
+        position: relative;
+        max-width: 30rem;
+	 }
+	 
+	 #linked {
+        height: 6rem;
+        position: relative;
+        max-width: 30rem;
+	 }
+	 
+	 #twit {
+        height: 6rem;
+        position: relative;
+        max-width: 30rem;
+	 }
+
      #logo {
      	top: 1rem;
      }
