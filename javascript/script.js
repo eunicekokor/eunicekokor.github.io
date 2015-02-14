@@ -21,6 +21,8 @@ $(document).ready(function(){
                   $('#first').fadeIn(500);
                  });
               });
+              
+              $('i').draggable();
             });
           });
         });
