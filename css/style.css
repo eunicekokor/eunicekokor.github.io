@@ -24,23 +24,6 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 275px) {
-    #logo {
-        width: 300px;
-    }
-    #sizing{
-      width: 100%;
-    }
-    i {
-    	padding: 0px;
-    	margin: 0px;
-    }
-    p{
-    	font-size: .5em;
-    }
-    
-}
-
 #logo{
   background: url('http://i.imgur.com/RzcWxMa.png?1');
   margin-top: 2000px;
@@ -129,4 +112,23 @@ margin: 20px;
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+@media screen and (max-width: 275px) {
+    #logo {
+        width: 250px;
+    }
+    #sizing{
+      width: 100%;
+    }
+    i {
+    	display: block;
+    }
+    h1 {
+    	font-size: 1em;
+    }
+    p{
+    	font-size: .5em;
+    }
+    
 }
