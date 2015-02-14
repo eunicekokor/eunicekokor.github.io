@@ -124,40 +124,42 @@ margin: 20px;
       p{
       	font-size: 1.2em;
       }
+      
       #resume {
         height: 6rem;
-        margin-left: -100px;
+        margin-left: -175px;
         max-width: 30rem;
 	 }
 	 
 	#mail {
         height: 6rem;
-        margin-left: 0px;
+        margin-left: -75px;
         max-width: 30rem;
 	 }
 	 
 	 #git {
         height: 6rem;
-        margin-left: -50px;
+        margin-left: -125px;
         max-width: 30rem;
 	 }
 	 
 	 #linked {
         height: 6rem;
-        margin-left: 100px;
+        margin-left: 25px;
         max-width: 30rem;
 	 }
 	 
 	 #twit {
         height: 6rem;
+        margin-left: -25px;
         max-width: 30rem;
 	 }
 	 
 
      #logo {
      	top: 1em;
-     	max-width: 200px;
-     	max-height: 200px;
+     	height: auto;
+     	width: 250px;
      }
 }
 
