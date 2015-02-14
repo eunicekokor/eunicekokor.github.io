@@ -125,6 +125,7 @@ margin: 20px;
       font-size: 3rem;   }
       p{
       	font-size: 10px;
+      	display: none;
       }
       
       #resume {
