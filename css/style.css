@@ -123,32 +123,26 @@ margin: 20px;
       font-size: 3rem;   }
       #resume {
         height: 6rem;
-        position: relative;
         max-width: 30rem;
 	 }
 	 
 	#mail {
         height: 6rem;
-        display:block;
         max-width: 30rem;
 	 }
 	 
 	 #git {
         height: 6rem;
-        display: block;
         max-width: 30rem;
 	 }
 	 
 	 #linked {
         height: 6rem;
-        display: block;
         max-width: 30rem;
 	 }
 	 
 	 #twit {
         height: 6rem;
-        display: block;
-       	margin-top: 7rem;
         max-width: 30rem;
 	 }
 
