@@ -123,21 +123,25 @@ margin: 20px;
       font-size: 3rem;   }
       #resume {
         height: 6rem;
+        margin-left: -100px;
         max-width: 30rem;
 	 }
 	 
 	#mail {
         height: 6rem;
+        margin-left: 0px;
         max-width: 30rem;
 	 }
 	 
 	 #git {
         height: 6rem;
+        margin-left: -50px;
         max-width: 30rem;
 	 }
 	 
 	 #linked {
         height: 6rem;
+        margin-left: 100px;
         max-width: 30rem;
 	 }
 	 
@@ -147,9 +151,9 @@ margin: 20px;
 	 }
 
      #logo {
-     	top: 1rem;
-     	max-width: 60rem;
-     	max-height: 60rem;
+     	top: 1em;
+     	max-width: 200px;
+     	max-height: 200px;
      }
 }
 
