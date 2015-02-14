@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log("github version 7 ready.");
+  console.log("github version ready.");
   
   $('#transition').fadeIn(1000, function(){
     $('#logo').animate({'margin-top': '5%'}, 800, function(){
@@ -10,6 +10,7 @@ $(document).ready(function(){
             $('#mail').animate({'margin-top': '0px'}, 500, function(){
               $('#resume').animate({'margin-top': '0px'}, 750);
               $('#moving').fadeIn(750);
+              $('#logo').draggable();
               
               $('#first').hover(function(){
                 $('#first').fadeOut(1000, function(){
@@ -22,7 +23,6 @@ $(document).ready(function(){
                  });
               });
               
-              $('#logo').draggable();
             });
           });
         });
