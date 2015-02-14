@@ -121,6 +121,9 @@ margin: 20px;
     
     h1 {
       font-size: 3rem;   }
+      p{
+      	font-size: 1.2em;
+      }
       #resume {
         height: 6rem;
         margin-left: -100px;
@@ -149,6 +152,7 @@ margin: 20px;
         height: 6rem;
         max-width: 30rem;
 	 }
+	 
 
      #logo {
      	top: 1em;
