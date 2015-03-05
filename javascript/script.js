@@ -10,7 +10,6 @@ $(document).ready(function(){
             $('#mail').animate({'margin-top': '0px'}, 500, function(){
               $('#resume').animate({'margin-top': '0px'}, 750);
               $('#moving').fadeIn(750);
-              $('#logo').draggable();
               
               $('#first').hover(function(){
                 $('#first').fadeOut(1000, function(){
