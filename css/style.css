@@ -1,7 +1,7 @@
 body {
   color: #777777;
   font-family: 'Lucida Grande', Helvetica, sans-serif; 
-  font-weight: 300;
+  font-weight: 100;
   /*overflow: hidden;*/
 }
 #changer{
@@ -78,24 +78,26 @@ ul {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen {
   .social {
-    font-size: 1em;
+    font-size: 3rem;
     padding: 1.2vw 1.4vh;
-    margin: .5em 1.4rem;
+    margin: .5rem 1.4rem;
     display: block;
-    font-style: center;
+    text-align: center;
   }
   li{
-    font-size: 2em;
+    font-size: 3rem;
   }
 
   img{
     margin-top: 5%;
+    width: 100vw;
   }
     
   h1 {
-    font-size: 4.3rem;
+    font-size: 5.3rem;
+    text-align: center;
     }
 
 }
