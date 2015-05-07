@@ -1,12 +1,54 @@
 body {
-  color: white;
+  color: #777777;
   font-family: 'Lucida Grande', Helvetica, sans-serif; 
   font-weight: 300;
-  overflow: hidden;
+  /*overflow: hidden;*/
+}
+#changer{
+  background: #222222;
+}
+.social{
+  z-index: 0;
+  position:fixed;
+  top: 0;
+  display: block;
+  font-size: .9em;
+  padding: 1rem;
+  text-align: center;
+}
+
+img{
+  margin-top: 10%;
+}
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 4.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300px;
+  color: rgba(250,250,250, .5);
+  z-index: 100;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
 }
 
 #special:hover{
-  -webkit-filter: blur(5px);
+  -webkit-filter: blur(.5em);
 }
 
 #second {
@@ -14,7 +56,8 @@ body {
 }
 
 #transition{
-  background: url('http://i.imgur.com/9zpA4vd.jpg');
+  /*background: url('http://i.imgur.com/9zpA4vd.jpg');*/
+  background-color: #000000;
   background-size: cover;
   width: 100%; 
   height: 100%; 
@@ -25,141 +68,34 @@ body {
   display: none;
 }
 
-#logo{
-  margin-top: 2000px;
-}
-
 #twit > a, #linked > a, #git > a, #mail > a, #resume > a {
-  color: #AAA;
-}
-
-#twit{
-  margin-top: 2000px;
-  display: inline-block;
-  position: absolute;
-  margin-left: 50px;
-}
-
-#linked{
-  margin-top: 2000px;
-  display: inline-block;
-  position: absolute;
-  margin-left: 150px;
-}
-
-#git{
-  margin-top: 2000px;
-  display: inline-block;
-  position: absolute;
-  margin-left: -150px;
-}
-
-#mail{
-  margin-top: 2000px;
-  display: inline-block;
-  position: absolute;
-  margin-left: -50px;
-}
-
-#resume{
-	margin-top: 2000px;
-	display: inline-block;
-	position: absolute;
-	margin-left: -250px;
-}
-
-#moving {
-font-size: 25px;
-color: rgba(0,0,0, .7);
-display: none;
-margin-top: 100px;
-}
-
-h1{
-  margin: -10px;
-  font-size: 100px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100px;
-  display: none;
-  color: rgba(0,0,0, .7);
-}
-
-a {
   color: white;
-  text-decoration: none;
-margin: 20px;
+  margin:auto 1rem auto;
 }
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.9s infinite;
-    -moz-animation: blink 0.9s infinite;
-    animation: blink 0.9s infinite;
-    display: none;
-    margin: 0;
+#twit:hover, #linked:hover, #git:hover, #mail:hover, #resume:hover {
+  -webkit-filter: blur(2px);
 }
 
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
 
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 12px;
-    width: 100%;
-    max-width: 768px;}
+@media only screen and (max-width: 480px) {
+  .social {
+    font-size: 1em;
+    padding: 1.2vw 1.4vh;
+    margin: .5em 1.4rem;
+    display: block;
+    font-style: center;
+  }
+  li{
+    font-size: 2em;
+  }
+
+  img{
+    margin-top: 5%;
+  }
     
-    h1 {
-      font-size: 3rem;   }
-      p{
-      	font-size: 10px;
-      	display: none;
-      }
-      
-      #resume {
-        height: 6rem;
-        margin-left: -150px;
-        max-width: 30rem;
-	 }
-	 
-	#mail {
-        height: 6rem;
-        margin-left: 50px;
-        max-width: 30rem;
-	 }
-	 
-	 #git {
-        height: 6rem;
-        margin-left: -100px;
-        max-width: 30rem;
-	 }
-	 
-	 #linked {
-        height: 6rem;
-        margin-left: 0px;
-        max-width: 30rem;
-	 }
-	 
-	 #twit {
-        height: 6rem;
-        margin-left: -50px;
-        max-width: 30rem;
-	 }
-}
+  h1 {
+    font-size: 4.3rem;
+    }
 
-@media only screen and (max-height: 320px) {
-  #logo {
-    top: 1rem;   }
 }
