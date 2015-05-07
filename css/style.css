@@ -78,7 +78,7 @@ ul {
 }
 
 
-@media only screen {
+@media only screen and (max-width: 380px) {
   .social {
     font-size: 3rem;
     padding: 1.2vw 1.4vh;
