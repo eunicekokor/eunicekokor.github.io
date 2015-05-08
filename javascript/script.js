@@ -12,7 +12,7 @@ $(function(){
     $( ".social" ).animate({fontSize: "2rem"}, 2400);
     $( "h1" ).animate({fontSize: "4rem"}, 2400);
   });
-
+  $('.social').fadeIn('slow');
   $('#transition').fadeIn(1000, function(){       
     $('#first').hover(function(){
       $('#first').fadeOut(1000, function(){
