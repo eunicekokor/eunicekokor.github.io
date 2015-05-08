@@ -24,9 +24,11 @@ p{
   font-size: 3.5rem;
   letter-spacing: 1px;
 }
-img{
-  margin-top: 5%;
+#logo{
+position: relative;
+ top: 15%;
 }
+
 ul{
   margin-top: 5%;
 }
@@ -90,7 +92,7 @@ ul {
 
 @media only screen and (max-width: 380px) {
   .social {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 1.2vw 1.4vh;
     margin: .5rem 1.4rem;
     display: block;
@@ -100,7 +102,7 @@ ul {
     font-size: 1rem;
   }
   li{
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   img{
@@ -108,7 +110,8 @@ ul {
       }
     
   h1 {
-    font-size: 4.3rem;
+    margin-top: 25%;
+    font-size: 3.3rem;
     text-align: center;
     }
 
