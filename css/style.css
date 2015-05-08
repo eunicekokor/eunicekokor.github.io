@@ -17,17 +17,18 @@ body {
   margin: .5rem 1.4rem;
   text-align: center;
 }
-#twit, #linked, #git, #mail, #resume{
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #006599;
+#break{
+  height: 25%;
 }
 p{
   font-size: 3.5rem;
-  margin-top: 3em;
   letter-spacing: 1px;
 }
 img{
-  margin-top: 10%;
+  margin-top: 5%;
+}
+ul{
+  margin-top: 5%;
 }
 img.center{
   display: block;

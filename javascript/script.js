@@ -1,6 +1,18 @@
-$(document).ready(function(){
+$(function(){
   console.log("github version ready.");
   
+  $('a[href*="#"]').click(function(e) {
+    e.preventDefault();
+    var $target = $($(this).attr('href'));
+    var scrollTop = $target.offset().top;
+    $('html, body').animate({'scrollTop': scrollTop}, 500);
+  });
+
+  $( window ).scroll(function() {
+    $( ".social" ).animate({fontSize: "2rem"}, 2400);
+    $( "h1" ).animate({fontSize: "4rem"}, 2400);
+  });
+
   $('#transition').fadeIn(1000, function(){       
     $('#first').hover(function(){
       $('#first').fadeOut(1000, function(){
@@ -12,7 +24,7 @@ $(document).ready(function(){
         $('#first').fadeIn(500);
        });
     });
-  });
+});
   
 /*$(function(){
       $('#moving').typed({
