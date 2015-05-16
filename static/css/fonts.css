@@ -11,13 +11,3 @@ font-style: normal;
 font-weight: normal;
 src: local('Helvetica 45 Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff');
 }
-
-html {
-  font-family: 'Helvetica 45 Light';
-  /*font-family: 'Open Sans', sans-serif;*/
-  color: black;
-}
-
-@media only screen and (max-width: 380px) {
-
-}
