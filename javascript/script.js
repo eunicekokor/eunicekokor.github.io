@@ -1,5 +1,16 @@
 $(document).ready(function(){
   console.log("github version ready.");
+
+
+  //check viewport size
+var width = $( window ).width();
+console.log(width);
+
+  if(width<=480){
+    alert("please view on a bigger device");
+  }
+
+
   $("#mylogo").animate({"margin-top":"12rem"}, 700);
   $("#mylogo").animate({"margin-top":"3rem"}, 500);
   $("#mylogo").animate({"margin-top":"9rem"}, 500);
@@ -16,6 +27,8 @@ $(document).ready(function(){
       $("#intro_text").animate({"right":"5rem"}, "slow")
     });
   $("#mylogo").click(function(){
+    $("#mylogo").animate({"width":"-=1%","height":"-=1%"});
+    $("#mylogo").animate({"width":"+=1%","height":"+=1%"});
     $("#mylogo").fadeOut("slow");
     $("#intro_text").animate({"bottom":"0"}, 1000, function(){
       $("#intro_text").html("welcome!");
@@ -98,6 +111,8 @@ $(document).ready(function(){
   });
 
   $("#img_creds").click(function(){
+    $("#img_creds").animate({"width":"-=.5%","height":"-=.5%"});
+    $("#img_creds").animate({"width":"+=.5%","height":"+=.5%"});
     $("#about").fadeOut();
     $("#building").hide();
     $("#writing").hide();
