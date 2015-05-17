@@ -1,14 +1,4 @@
 $(document).ready(function(){
-  console.log("github version ready.");
-
-
-  //check viewport size
-var width = $( window ).width();
-console.log(width);
-
-  if(width<=480){
-    alert("please view on a bigger device");
-  }
 
 
   $("#mylogo").animate({"margin-top":"12rem"}, 700);
@@ -35,8 +25,8 @@ console.log(width);
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
         $("#intro_text").css("z-index","-1");
-        $("#box1").animate({"width":"70rem"}, 1000);
-        $("#box2").animate({"width":"15rem"});
+        $("#box1").animate({"width":"70%"}, 1000);
+        $("#box2").animate({"width":"25%"});
         $("#box2").fadeIn("slow", function(){
           $("html").css("background", "#B0B5B3")
           .fadeIn("slow");
@@ -51,8 +41,8 @@ console.log(width);
       $("#intro_text").html("welcome!");
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
-        $("#box1").animate({"width":"70rem"}, 1000);
-        $("#box2").animate({"width":"15rem"});
+        $("#box1").animate({"width":"70%"}, 1000);
+        $("#box2").animate({"width":"25%"});
         $("#box2").fadeIn("slow", function(){
           $("html").css("background", "#B0B5B3")
           .fadeIn("slow");
@@ -68,8 +58,8 @@ console.log(width);
     $("#writing").hide();
     $("#doing").hide();
     $("#hearts").hide();
-    $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70rem"}, 500, function(){
+    $("#box1").animate({"width":"0%"}, 1500);
+    $("#box1").animate({"width":"70%"}, 500, function(){
       $("#building").fadeIn("fast");
     });
   });
@@ -81,7 +71,7 @@ console.log(width);
     $("#building").hide();
     $("#hearts").hide();
     $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70rem"}, 500, function(){
+    $("#box1").animate({"width":"70%"}, 500, function(){
       $("#doing").fadeIn();
     });
   });
@@ -93,7 +83,7 @@ console.log(width);
     $("#doing").hide();
     $("#hearts").hide();
     $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70rem"}, 500, function(){
+    $("#box1").animate({"width":"70%"}, 500, function(){
       $("#writing").fadeIn();
     });
   });
@@ -105,7 +95,7 @@ console.log(width);
     $("#doing").hide();
     $("#building").hide();
     $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70rem"}, 500, function(){
+    $("#box1").animate({"width":"70%"}, 500, function(){
       $("#hearts").fadeIn();
     });
   });
@@ -119,7 +109,7 @@ console.log(width);
     $("#doing").hide();
     $("#hearts").hide();
     $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70rem"}, 500, function(){
+    $("#box1").animate({"width":"70%"}, 500, function(){
       $("#about").fadeIn();
     });
   });

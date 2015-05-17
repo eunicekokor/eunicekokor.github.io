@@ -35,7 +35,7 @@ h3{
   font-size: 3.5rem;
   position: absolute;
   right: 5rem;
-  bottom: 0;
+  bottom: 1%;
   display: none;
 }
 #para_pic{
@@ -58,7 +58,7 @@ h3{
   background: #424347;
   color: #B0B5B3;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
 
 }
 #about{
@@ -73,6 +73,7 @@ h3{
   margin-top: 7rem;
   margin-left: 7rem;
   max-width: 100%;
+  overflow-x:hidden;
 }
 
 #box2{
@@ -100,23 +101,24 @@ li{
 
 #creds{
   position: absolute;
-  padding: 10px;
   bottom: 0;
-  right: 2em;
+  right: 25%;
+  left: 25%;
   color: #B0B5B3;
 }
 
 #doing_img{
-  width: 55rem;
-  height:35rem;
+  max-width: 75%;
+  height: auto;
 }
 
 #img_creds{
-  right: 2.5rem;
-  bottom: 2.5rem;
+  right: 25%;
+  left: 25%;
+  bottom: 2.5%;
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  max-width: 50%;
+  height: auto;
   border-radius: 50%;
   box-shadow: 0 2px 6px black;
 }
@@ -164,19 +166,4 @@ a:visited{
   text-decoration-color: black;
   -webkit-text-decoration-color: black;
   -moz-text-decoration-color: black; /* Code for Firefox */
-}
-
--webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-   -moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-     -o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-        transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-
--webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-   -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-
-@media only screen and (max-width: 380px) {
-/*none yet!*/
-
 }
