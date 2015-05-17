@@ -28,7 +28,7 @@ h2{
 h3{
   margin-top: -3rem;
   font-size: 1.6rem;
-  color: #4F4F54;
+  color: black;
 }
 
 #intro_text{
@@ -117,7 +117,27 @@ li{
 }
 
 #doing_img{
-  max-width: 75%;
+  position: absolute;
+  left: 0;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.1;
+  z-index: -1;
+  top: 0;
+}
+
+#multiple_pics{
+  left: 0;
+  position: absolute;
+  background: black;
+}
+
+#pic{
+  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

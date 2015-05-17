@@ -5,7 +5,7 @@ $(document).ready(function(){
   $("#mylogo").animate({"margin-top":"3rem"}, 500);
   $("#mylogo").animate({"margin-top":"9rem"}, 500);
   $("#mylogo").animate({"margin-top":"7rem"}, 250, function(){
-    $("#intro_text").fadeIn(500);
+    $("#intro_text").fadeIn(100);
   });
 
   var left = $('#intro_text').offset().left;  // Get the calculated left position
