@@ -59,6 +59,7 @@ h3{
   color: #B0B5B3;
   overflow-y: scroll;
   overflow-x: hidden;
+  min-width: 206px;
 
 }
 #about{
@@ -77,13 +78,15 @@ h3{
 }
 
 #box2{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100%;
   width: 20rem;
+  /*background: #424347;*/
   background: #4F4F54;
   display: none;
+  min-width: 180px;
 }
 
 #nav{
@@ -115,12 +118,13 @@ li{
 #img_creds{
   right: 25%;
   left: 25%;
-  bottom: 2.5%;
+  bottom: 10%;
   position: absolute;
   max-width: 50%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 2px 6px black;
+  min-width: 95px;
 }
 #intro_heart{
   font-size: 2rem;
@@ -166,4 +170,12 @@ a:visited{
   text-decoration-color: black;
   -webkit-text-decoration-color: black;
   -moz-text-decoration-color: black; /* Code for Firefox */
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    background: pink;
 }

@@ -25,8 +25,8 @@ $(document).ready(function(){
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
         $("#intro_text").css("z-index","-1");
-        $("#box1").animate({"width":"70%"}, 1000);
-        $("#box2").animate({"width":"25%"});
+        $("#box1").animate({"width":"75%"}, 1000);
+        $("#box2").animate({"width":"20%"});
         $("#box2").fadeIn("slow", function(){
           $("html").css("background", "#B0B5B3")
           .fadeIn("slow");
@@ -41,8 +41,8 @@ $(document).ready(function(){
       $("#intro_text").html("welcome!");
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
-        $("#box1").animate({"width":"70%"}, 1000);
-        $("#box2").animate({"width":"25%"});
+        $("#box1").animate({"width":"75%"}, 1000);
+        $("#box2").animate({"width":"20%"});
         $("#box2").fadeIn("slow", function(){
           $("html").css("background", "#B0B5B3")
           .fadeIn("slow");
@@ -58,8 +58,8 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#doing").hide();
     $("#hearts").hide();
-    $("#box1").animate({"width":"0%"}, 1500);
-    $("#box1").animate({"width":"70%"}, 500, function(){
+    $("#box1").animate({"width":"0%"}, 1250);
+    $("#box1").animate({"width":"75%"}, 500, function(){
       $("#building").fadeIn("fast");
     });
   });
@@ -70,8 +70,8 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#building").hide();
     $("#hearts").hide();
-    $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70%"}, 500, function(){
+    $("#box1").animate({"width":"0%"}, 1250);
+    $("#box1").animate({"width":"75%"}, 500, function(){
       $("#doing").fadeIn();
     });
   });
@@ -82,8 +82,8 @@ $(document).ready(function(){
     $("#building").hide();
     $("#doing").hide();
     $("#hearts").hide();
-    $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70%"}, 500, function(){
+    $("#box1").animate({"width":"0%"}, 1250);
+    $("#box1").animate({"width":"75%"}, 500, function(){
       $("#writing").fadeIn();
     });
   });
@@ -94,22 +94,20 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#doing").hide();
     $("#building").hide();
-    $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70%"}, 500, function(){
+    $("#box1").animate({"width":"0%"}, 1250);
+    $("#box1").animate({"width":"75%"}, 500, function(){
       $("#hearts").fadeIn();
     });
   });
 
   $("#img_creds").click(function(){
-    $("#img_creds").animate({"width":"-=.5%","height":"-=.5%"});
-    $("#img_creds").animate({"width":"+=.5%","height":"+=.5%"});
     $("#about").fadeOut();
     $("#building").hide();
     $("#writing").hide();
     $("#doing").hide();
     $("#hearts").hide();
-    $("#box1").animate({"width":"0%"}, 500);
-    $("#box1").animate({"width":"70%"}, 500, function(){
+    $("#box1").animate({"width":"0%"}, 1250);
+    $("#box1").animate({"width":"75%"}, 500, function(){
       $("#about").fadeIn();
     });
   });
