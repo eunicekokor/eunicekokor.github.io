@@ -62,19 +62,20 @@ h3{
   color: #B0B5B3;
   overflow-y: scroll;
   overflow-x: hidden;
-
 }
 #about{
   color: #B0B5B3;
-  margin-left: 7rem;
-  margin-top: 7rem;
+  margin-left: 7%;
+  margin-top: 0%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 #building,#writing,#doing,#hearts{
   display: none;
   z-index: 100;
   color: #B0B5B3;
-  margin-top: 7rem;
-  margin-left: 7rem;
+  margin-top: 0%;
+  margin-left: 7%;
   max-width: 100%;
   overflow-x:hidden;
 }
@@ -175,12 +176,4 @@ a:visited{
   text-decoration-color: black;
   -webkit-text-decoration-color: black;
   -moz-text-decoration-color: black; /* Code for Firefox */
-}
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    background: pink;
 }
