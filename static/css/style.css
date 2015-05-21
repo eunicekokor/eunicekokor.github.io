@@ -133,7 +133,13 @@ li{
 #multiple_pics{
   left: 0;
   position: absolute;
-  background: black;
+  background: #4F4F54;
+}
+
+#para{
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 2%;
 }
 
 #pic{
