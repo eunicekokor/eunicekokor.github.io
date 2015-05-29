@@ -1,7 +1,7 @@
 html {
   font-family: 'Helvetica 45 Light';
   color: #424347;
-  background: #B0B5B3;
+  background: #E5F4E3;
 }
 
 #para_list{
@@ -58,14 +58,14 @@ h3{
   width: 20rem;
   height: 100%;
   display: none;
-  background: #424347;
-  color: #B0B5B3;
+  background: #E5F4E3;
+  color: #424347;
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 #about{
-  color: #B0B5B3;
+  color: #424347;
   margin-left: 7%;
   margin-top: 0%;
   overflow-y: scroll;
@@ -74,7 +74,7 @@ h3{
 #building,#writing,#doing,#hearts{
   display: none;
   z-index: 100;
-  color: #B0B5B3;
+  color: #424347;
   margin-top: 0%;
   margin-left: 7%;
   max-width: 100%;
@@ -98,7 +98,7 @@ h3{
   position: relative;
   font-size: 2em;
   display: none;
-  color: #B0B5B3;
+  color: #E5F4E3;
 }
 
 li{
@@ -111,10 +111,10 @@ li{
   margin-top: 1%;
   margin: 0;
   padding: 0;
-  bottom: 0;
+  bottom: 2%;
   right: 25%;
   left: 25%;
-  color: #B0B5B3;
+  color: #c5c6c6;
 }
 
 #doing_img{
@@ -133,7 +133,7 @@ li{
 #multiple_pics{
   left: 0;
   position: absolute;
-  background: #4F4F54;
+  background: #c5c6c6;
 }
 
 #para{

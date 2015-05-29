@@ -28,7 +28,7 @@ $(document).ready(function(){
         $("#box1").animate({"width":"79.5%"}, 1000);
         $("#box2").animate({"width":"20%"});
         $("#box2").fadeIn("slow", function(){
-          $("html").css("background", "#B0B5B3")
+          $("html").css("background", "#424347")
           .fadeIn("slow");
         });
         $("#nav").fadeIn();
@@ -44,7 +44,7 @@ $(document).ready(function(){
         $("#box1").animate({"width":"79.5%"}, 1000);
         $("#box2").animate({"width":"20%"});
         $("#box2").fadeIn("slow", function(){
-          $("html").css("background", "#B0B5B3")
+          $("html").css("background", "#424347")
           .fadeIn("slow");
         });
         $("#nav").fadeIn();
