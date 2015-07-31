@@ -204,3 +204,8 @@ a:visited{
   -webkit-text-decoration-color: black;
   -moz-text-decoration-color: black; /* Code for Firefox */
 }
+
+#static_shock{
+  position: fixed;
+  bottom: 2em;
+}
