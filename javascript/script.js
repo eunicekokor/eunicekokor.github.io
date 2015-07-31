@@ -1,22 +1,26 @@
 $(document).ready(function(){
-
+  $("#top").animate({"height":"100%"}, 1500, function(){
+    $("#top").animate({"height":"15%"}, 1000);
+  });
 
   $("#mylogo").animate({"margin-top":"12rem"}, 700);
   $("#mylogo").animate({"margin-top":"3rem"}, 500);
   $("#mylogo").animate({"margin-top":"9rem"}, 500);
   $("#mylogo").animate({"margin-top":"7rem"}, 250, function(){
     $("#intro_text").fadeIn(100);
+    $("#code2040").fadeIn(100);
   });
 
   var left = $('#intro_text').offset().left;  // Get the calculated left position
+  var left2040 = $('#code2040').offset.left;
 
-  console.log(left);
   $(".intro").hover(function(){
     $("#intro_text").animate({"right":"+=5%"}, "slow")
     }, function(){  // Set the left to its calculated position
       $("#intro_text").animate({"right":"-=5%"}, "slow")
     });
   $("#mylogo").click(function(){
+    $("#code2040").fadeOut("slow");
     $("#mylogo").animate({"width":"-=1%","height":"-=1%"});
     $("#mylogo").animate({"width":"+=1%","height":"+=1%"});
     $("#mylogo").fadeOut("slow");
@@ -36,6 +40,7 @@ $(document).ready(function(){
     });
     });
   $("#intro_text").click(function(){
+    $("#code2040").fadeOut("slow");
     $("#mylogo").fadeOut("slow");
     $("#intro_text").animate({"bottom":"0"}, 1000, function(){
       $("#intro_text").html("welcome!");

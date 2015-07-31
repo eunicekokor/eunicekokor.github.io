@@ -1,8 +1,31 @@
+/* Menu */
 html {
   font-family: 'Helvetica 45 Light';
   color: #424347;
   background: #E5F4E3;
 }
+
+.static_shock:hover{
+  text-decoration: underline;
+}
+/* Appetizers */
+
+#code2040 {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 0 35%;
+  font-size: 2rem;
+  position: fixed;
+  left: 25%;
+  top: 0%;
+  color: #9ac9f8;
+  z-index: 1000;
+}
+
+/* Main Course */
+
+/*Desserts*/
+
 
 #para_list{
   font-size: 1.2em;
@@ -208,4 +231,10 @@ a:visited{
 #static_shock{
   position: fixed;
   bottom: 2em;
+}
+
+@media (max-width: 1025px){
+  h2 {
+    font-size: 1rem;
+  }
 }
