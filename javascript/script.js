@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $("#top").animate({"height":"100%"}, 1500, function(){
-    $("#top").animate({"height":"15%"}, 1000);
-  });
+
+  var w = $(".proj_bubble").width();
+  $(".proj_bubble").css({"height": w +'px'});
 
   $("#mylogo").animate({"margin-top":"12rem"}, 700);
   $("#mylogo").animate({"margin-top":"3rem"}, 500);
