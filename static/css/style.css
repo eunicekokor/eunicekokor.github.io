@@ -5,6 +5,12 @@ html {
   background: #E5F4E3;
 }
 
+.proj_bubble:hover{
+  border: solid;
+  border-color: black;
+  box-shadow: 0 2px 6px black;
+}
+
 .resume_fonts{
   font-family: 'Avenir Next';
   line-height: 1.5em;
