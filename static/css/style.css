@@ -336,6 +336,8 @@ a:visited{
   list-style-type: none;
   display: inline-block;
   color: #E5F4E3;
+  margin: .5em;
+  vertical-align: middle;
 }
 
 li{
@@ -346,7 +348,6 @@ li{
 }
 ul li{
   display: inline;
-  vertical-align: middle;
 }
 
 #creds{
