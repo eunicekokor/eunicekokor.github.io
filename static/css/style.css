@@ -308,8 +308,52 @@ a:visited{
   bottom: 2em;
 }
 
-@media (max-width: 1025px){
-  h2 {
-    font-size: 1rem;
+@media screen and (max-width: 667px) { 
+  #box1{
+    width: 100rem;
   }
+
+  #box2{
+    width: 100%;
+    position: fixed;
+    height: 7.5%;
+  bottom: 0;
+  left: 0;
+  /*background: #424347;*/
+  background: #4F4F54;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-top: 25%;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  #nav{
+  list-style-type: none;
+  display: inline-block;
+  color: #E5F4E3;
+}
+
+li{
+  padding-left: .25em;
+  font-size: .75em;
+  vertical-align: middle;
+  padding-bottom: .25em;
+}
+ul li{
+  display: inline;
+  vertical-align: middle;
+}
+
+#creds{
+  display: none;
+}
+
+#img_creds{
+  display: none;
+}
 }

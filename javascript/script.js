@@ -29,8 +29,16 @@ $(document).ready(function(){
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
         $("#intro_text").css("z-index","-1");
-        $("#box1").animate({"width":"79.5%"}, 1000);
-        $("#box2").animate({"width":"20%"});
+        if ($( window ).width() < 668){
+          $("#box1").animate({"width":"100%"}, 1000);
+          $("#box2").animate({"width":"100%"});
+        console.log("TEST");
+        }
+        else {
+          $("#box1").animate({"width":"79.5%"}, 1000);
+          $("#box2").animate({"width":"20%"});
+        console.log("TESTING");
+        }
         $("#box2").fadeIn("slow", function(){
           $("html").css("background", "#424347")
           .fadeIn("slow");
@@ -46,8 +54,17 @@ $(document).ready(function(){
       $("#intro_text").html("welcome!");
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
-        $("#box1").animate({"width":"79.5%"}, 1000);
-        $("#box2").animate({"width":"20%"});
+
+        if ($( window ).width() < 668){
+          $("#box1").animate({"width":"100%"}, 1000);
+          $("#box2").animate({"width":"100%"});
+        console.log("TEST");
+        }
+        else {
+          $("#box1").animate({"width":"79.5%"}, 1000);
+          $("#box2").animate({"width":"20%"});
+        console.log("TESTING");
+        }
         $("#box2").fadeIn("slow", function(){
           $("html").css("background", "#424347")
           .fadeIn("slow");
@@ -63,10 +80,18 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#doing").hide();
     $("#hearts").hide();
+    if ($( window ).width() < 668){
+    $("#box1").animate({"width":"100%"}, 1250);
+    $("#box1").animate({"width":"100%"}, 500, function(){
+      $("#building").fadeIn("fast");
+    });
+    }
+    else {
     $("#box1").animate({"width":"0%"}, 1250);
     $("#box1").animate({"width":"79.5%"}, 500, function(){
       $("#building").fadeIn("fast");
     });
+    }
   });
 
   $("#doing_nav").click(function(){
@@ -75,10 +100,18 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#building").hide();
     $("#hearts").hide();
+    if ($( window ).width() < 668){
+    $("#box1").animate({"width":"100%"}, 1250);
+    $("#box1").animate({"width":"100%"}, 500, function(){
+      $("#doing").fadeIn("fast");
+    });
+    }
+    else {
     $("#box1").animate({"width":"0%"}, 1250);
     $("#box1").animate({"width":"79.5%"}, 500, function(){
-      $("#doing").fadeIn();
+      $("#doing").fadeIn("fast");
     });
+    }
   });
 
   $("#writing_nav").click(function(){
@@ -87,10 +120,18 @@ $(document).ready(function(){
     $("#building").hide();
     $("#doing").hide();
     $("#hearts").hide();
+    if ($( window ).width() < 668){
+    $("#box1").animate({"width":"100%"}, 1250);
+    $("#box1").animate({"width":"100%"}, 500, function(){
+      $("#writing").fadeIn("fast");
+    });
+    }
+    else {
     $("#box1").animate({"width":"0%"}, 1250);
     $("#box1").animate({"width":"79.5%"}, 500, function(){
-      $("#writing").fadeIn();
+      $("#writing").fadeIn("fast");
     });
+    }
   });
 
   $("#hearts_nav").click(function(){
@@ -99,10 +140,18 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#doing").hide();
     $("#building").hide();
+    if ($( window ).width() < 668){
+    $("#box1").animate({"width":"100%"}, 1250);
+    $("#box1").animate({"width":"100%"}, 500, function(){
+      $("#hearts").fadeIn("fast");
+    });
+    }
+    else {
     $("#box1").animate({"width":"0%"}, 1250);
     $("#box1").animate({"width":"79.5%"}, 500, function(){
-      $("#hearts").fadeIn();
+      $("#hearts").fadeIn("fast");
     });
+    }
   });
 
   $("#img_creds").click(function(){
@@ -111,10 +160,18 @@ $(document).ready(function(){
     $("#writing").hide();
     $("#doing").hide();
     $("#hearts").hide();
+    if ($( window ).width() < 668){
+    $("#box1").animate({"width":"100%"}, 1250);
+    $("#box1").animate({"width":"100%"}, 500, function(){
+      $("#about").fadeIn("fast");
+    });
+    }
+    else {
     $("#box1").animate({"width":"0%"}, 1250);
     $("#box1").animate({"width":"79.5%"}, 500, function(){
-      $("#about").fadeIn();
+      $("#about").fadeIn("fast");
     });
+    }
   });
 
 });
