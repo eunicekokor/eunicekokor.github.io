@@ -1,0 +1,26 @@
+{% include "basic.html" %}
+<div id ="box1">
+  {% block results %} {% endblock %}
+</div>
+<div id = "box2">
+    {% if info %}
+      <ul id="nav">
+          {% for heading in info['headings'] %}
+            {% if heading['title'] == 'hearts'%}
+            <li>
+              <a href="/{{heading['title']}}"><i class="fa fa-heart-o"></i></a>
+            </li>
+            {% else %}
+          <li><a href="/{{heading['title']}}">
+            {{heading['title']}}</a>
+          </li>
+          {%endif%}
+          {% endfor %}
+      </ul>
+    {% else %}
+      <p> error in loading nav </p>
+    {% endif %}
+    
+    <a href="#"><img id="img_creds" src="/static/images/profile.jpg"></img></a>
+    <span id="creds">made with <a href="#" title="and JQuery!"><i class="fa fa-heart-o"></i></a>  by EK</span>
+  </div>

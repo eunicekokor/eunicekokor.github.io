@@ -1,0 +1,18 @@
+{% extends "page_layout.html" %}
+{% block results %}
+<div id="doing">
+{% if info %}
+  {% for heading in info['headings'] %}
+    {% if heading['title'] == 'doing' %}
+      <h2>{{heading['title']}}</h2><h3><strong>{</strong>{{heading['subheading']}}<strong>}</strong></h3>      
+      <p></p>
+      <p>I work with nonprofits like  <a id="para_link" href="http://www.sheplusplus.org/ambassadors/">She++</a>, an organization fighting for <b>inclusivity in tech</b>, <a id="para_link" href="https://prezi.com/cy8wtbxlso5p/my-mites-experience-at-mit-and-how-to-succeed-in-high-school-and-beyond/">MITES</a>, which aims to <b>prepare</b> high-achieving minority students for the rigors of a top-tier engineering curriculum, and <a id="para_link" href="http://www.mbaodyssey.com/">MBA Odyssey Inc.</a> 
+          which organizes competitions for business school students around the world to learn <b>leadership</b> skills.</p>
+          <img id="doing_img" src="/static/images/projects/mites14.jpg"></img>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <p> error in loading page </p>
+{% endif %}
+</div>
+{% endblock %}

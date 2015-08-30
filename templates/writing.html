@@ -1,0 +1,26 @@
+{% extends "page_layout.html" %}
+{% block results %}
+<div id="writing">
+{% if info %}
+  {% for heading in info['headings'] %}
+    {% if heading['title'] == 'writing' %}
+      <h2>{{heading['title']}}</h2><h3><strong>{</strong>{{heading['subheading']}}<strong>}</strong></h3>      
+      <p></p>
+      <p>Sometimes I write about tech-related things:</p>
+        <ul id="para_list">
+            <li style="list-style-type: none;"><a href="https://www.ptcusercommunity.com/community/academic-program/first/blog/2013/01/05/getting-the-hang-of-things" id="para_links">FIRST Robotics Blog</a></li>
+            <li style="list-style-type: none;"><a href="https://adicu.com/blog/post/quickbit-ios" id="para_links">iOS QuickBits Blog Post</a></li>
+            <li style="list-style-type: none;"><a href="https://adicu.com/blog/post/NYTM-october" id="para_links">New York City Tech Meetup Blog Post</a></li>
+        </ul>
+        <p>Other times I write poems about things that happen:</p>
+        <ul id="para_list">
+          <li style="list-style-type: none;"><a href="https://medium.com/@eunicekokor/i-just-can-t-breathe-23084fac66f4"><i>I Just Can't Breathe</i></a></li>
+        </ul>
+        <p> Stay tuned for more! Follow me on <a id="para_link" href="http://www.twitter.com/eunicekokor" >Twitter </a> for everyday things!</p>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <p> error in loading page </p>
+{% endif %}
+</div>
+{% endblock %}

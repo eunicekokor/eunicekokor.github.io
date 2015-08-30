@@ -1,0 +1,18 @@
+{% extends "page_layout.html" %}
+{% block results %}
+<div id="hearts">
+{% if info %}
+  {% for heading in info['headings'] %}
+    {% if heading['title'] == 'hearts' %}
+      <h2><i class="fa fa-heart-o"></i></h2><h3><strong>{</strong>passions<strong>}</strong></h3>      
+      <p></p>
+        <p>I care about organizations and people trying to make the world a better place!</p>
+        <p>If you are in the Bay Area this summer, <a id="para_link" href="mailto:eunicekokor@gmail.com?subject=Hey Eunice. Let's get coffee!">grab coffee</a> with me! I love learning new things about people from all walks of life and experiences.</p>
+        <img id="doing_img" src="/static/images/projects/shepluplus.jpg"></img>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <p> error in loading page </p>
+{% endif %}
+</div>
+{% endblock %}

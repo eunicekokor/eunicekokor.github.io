@@ -1,106 +1,8 @@
-/* Menu */
 html {
   font-family: 'Helvetica 45 Light';
   color: #424347;
   background: #E5F4E3;
 }
-
-.proj_bubble:hover{
-  border: solid;
-  border-color: black;
-  box-shadow: 0 2px 6px black;
-}
-
-.resume_fonts{
-  font-family: 'Avenir Next';
-  line-height: 1.5em;
-  font-weight: 400;
-  margin-top: 1em;
-}
-
-.resume_head{
-  font-family: 'Avenir Next';
-  font-weight: 300;
-  vertical-align: bottom;
-}
-
-.resume_box{
-  border-radius: 14px;
-  vertical-align:top;
-  color: black;
-  background-color: rgb(250, 250, 250);
-  display: inline-block;
-  left: 447px;
-  top: 356px;
-  width: 20%;
-  margin-top: 1em;
-  margin-right: .75%;
-  height: 166px;
-  z-index: 6;
-}
-
-.resume_box_long{
-  border-radius: 14px;
-  vertical-align:top;
-  color: black;
-  background-color: rgb(244, 255, 255);
-  display: inline-block;
-  left: 447px;
-  top: 356px;
-  width: 82.75%;
-  margin-top: 1em;
-  margin-right: .75em;
-  height: auto;
-  z-index: 6;
-}
-
-.resume_box_left{
-  border-radius: 14px;
-  vertical-align:top;
-  color: black;
-  background-color: rgb(255, 244, 255);
-  display: inline-block;
-  left: 447px;
-  top: 356px;
-  width: 95%;
-  padding-left: 10%;
-  margin-left: 0;
-  margin-top: 1.5em;
-  margin-right: .75em;
-  height: auto;
-  z-index: 6;
-}
-
-.resume_box_left:hover, .resume_box_long:hover, .resume_box:hover{
-  background-color: white;
-  border: solid;
-  border-color: black;
-  box-shadow: 0 2px 6px black;
-  text-align: center;
-}
-
-
-.static_shock:hover{
-  text-decoration: underline;
-}
-/* Appetizers */
-
-#code2040 {
-  display: inline-block;
-  margin: 0;
-  padding: 0 0 0 23%;
-  font-size: 2rem;
-  position: fixed;
-  right: 1em;
-  top: 0%;
-  color: black;
-  z-index: 1000;
-}
-
-/* Main Course */
-
-/*Desserts*/
-
 
 #para_list{
   font-size: 1.2em;
@@ -136,8 +38,7 @@ h3{
   position: absolute;
   right: 25%;
   left: 25%;
-  bottom: 0%;
-  display: none;
+  bottom: 0%; 
 }
 #para_pic{
   width: 12rem;
@@ -153,14 +54,14 @@ h3{
   top: 0;
   left: 0;
   position: fixed;
-  width: 20rem;
+  width: 85%;
   height: 100%;
-  display: none;
   background: #E5F4E3;
   color: #424347;
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  z-index: 100;
 }
 #about{
   color: #424347;
@@ -170,7 +71,6 @@ h3{
   overflow-x: hidden;
 }
 #building,#writing,#doing,#hearts{
-  display: none;
   z-index: 100;
   color: #424347;
   margin-top: 0%;
@@ -184,18 +84,16 @@ h3{
   top: 0;
   right: 0;
   height: 100%;
-  width: 20rem;
+  width: 15%;
   /*background: #424347;*/
   background: #4F4F54;
-  display: none;
-  min-width: 180px;
+  min-width: 200px;
 }
 
 #nav{
   list-style-type: none;
   position: relative;
   font-size: 2em;
-  display: none;
   color: #E5F4E3;
 }
 
@@ -214,6 +112,7 @@ li{
   left: 25%;
   color: #c5c6c6;
 }
+
 
 #doing_img{
   position: absolute;
@@ -260,12 +159,6 @@ li{
 #intro_heart{
   font-size: 2rem;
 }
-li:hover{
-  transition: all .2s ease-in-out;
-  transform: scale(1.05);
-  text-shadow: 0 0 10px #666,                              
-         0 0 10px #000;
-}
 
 #img_creds:hover{
   box-shadow: 0 2px 6px black;
@@ -301,15 +194,4 @@ a:visited{
   text-decoration-color: black;
   -webkit-text-decoration-color: black;
   -moz-text-decoration-color: black; /* Code for Firefox */
-}
-
-#static_shock{
-  position: fixed;
-  bottom: 2em;
-}
-
-@media (max-width: 1025px){
-  h2 {
-    font-size: 1rem;
-  }
 }
