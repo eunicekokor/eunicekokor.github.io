@@ -377,8 +377,26 @@ a:visited{
     font-size: 3em;
   }
   #mylogo2{
-    animation: none;
+    animation: logo-rotate-mobile 6s ease-in-out 1;
   }
+
+  @keyframes logo-rotate-mobile{
+  0%  {
+    transform:rotate(0deg);
+  }
+  25%  {
+    transform:rotate(90deg);
+  }
+  50%  {
+    transform:rotate(180deg);
+  }
+  75%  { 
+    transform:rotate(270deg);
+  }
+  100% {  
+    transform:rotate(0deg);
+  }
+}
   #box1{
     width: 100rem;
   }

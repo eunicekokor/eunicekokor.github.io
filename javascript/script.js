@@ -24,10 +24,16 @@ $(document).ready(function(){
     });
   $("#mylogo").click(function(){
     $("#code2040").fadeOut("slow");
-    $("#mylogo").fadeOut("slow", function(){
+    $("#mylogo").hide("slow", function(){
       $("#mylogo2").fadeIn("fast");
     });
-    $("#intro_text").animate({"bottom":"0"}, 8500, function(){
+    if ($( window ).width() < 668){
+      var wait_time = 6500;
+    }
+    else{
+      var wait_time = 8500;
+    }
+    $("#intro_text").animate({"bottom":"0"}, wait_time, function(){
       $("#intro_text").html("welcome!");
       $("#mylogo2").fadeOut("fast");
       $("#box1").fadeIn("slow", function(){
@@ -57,7 +63,13 @@ $(document).ready(function(){
     $("#mylogo").fadeOut("slow", function(){
       $("#mylogo2").fadeIn("fast");
     });
-    $("#intro_text").animate({"bottom":"0"}, 8500, function(){
+    if ($( window ).width() < 668){
+      var wait_time = 1000;
+    }
+    else{
+      var wait_time = 8500;
+    }
+    $("#intro_text").animate({"bottom":"0"}, wait_time, function(){
       $("#intro_text").html("welcome!");
       $("#mylogo2").fadeOut("fast");
       $("#box1").fadeIn("slow", function(){
