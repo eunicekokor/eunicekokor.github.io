@@ -282,6 +282,7 @@ li{
 #doing_img{
   position: absolute;
   left: 0;
+  top: 0;
   margin-left: 0%;
   margin-right: 0%;
   width: 100%;
@@ -289,7 +290,6 @@ li{
   height: auto;
   opacity: 0.3;
   z-index: -1;
-  top: 0;
 }
 
 #multiple_pics{
@@ -411,6 +411,10 @@ a:visited{
   /*background: #424347;*/
   background: #4F4F54;
   }
+
+  .under_img{
+    margin-top: 90%;
+}
 
   h2 {
     font-size: 3rem;

@@ -17,12 +17,6 @@ $(document).ready(function(){
   var left = $('#intro_text').offset().left;  // Get the calculated left position
   var left2040 = $('#code2040').offset.left;
 
-  $(".intro").hover(function(){
-    $("#intro_text").animate({"right":"+=5%"}, "slow")
-    }, function(){  // Set the left to its calculated position
-      $("#intro_text").animate({"right":"-=5%"}, "slow")
-    });
-
   $("#mylogo").click(function(){
     $("#intro_text").fadeOut();
     $("#mylogo").css({"display":"none"});
