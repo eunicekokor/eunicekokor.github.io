@@ -163,12 +163,25 @@ $(document).ready(function(){
     $("#box1").animate({"width":"100%"}, 1250);
     $("#box1").animate({"width":"100%"}, 500, function(){
       $("#hearts").fadeIn("fast");
+      $(".fa-heart-o").animate({"animation-duration":"1s"});
+      $(".fa-heart-o").hover(function(){
+        $(".fa-heart-o").css({"animation-duration":".25s"}, function(){
+          $(".fa-heart-o").css({"animation-duration":"1s"});
+        });
+      });
+
     });
     }
     else {
     $("#box1").animate({"width":"0%"}, 1250);
     $("#box1").animate({"width":"79.5%"}, 500, function(){
       $("#hearts").fadeIn("fast");
+      $(".fa-heart-o").animate({"animation-duration":"1s"});
+      $(".fa-heart-o").hover(function(){
+        $(".fa-heart-o").css({"animation-duration":".25s"}, function(){
+          $(".fa-heart-o").css({"animation-duration":"1s"});
+        });
+      });
     });
     }
   });
