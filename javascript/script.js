@@ -3,13 +3,16 @@ $(document).ready(function(){
   var w = $(".proj_bubble").width();
   $(".proj_bubble").css({"height": w +'px'});
 
-  $("#mylogo").animate({"margin-top":"12rem"}, 700);
-  $("#mylogo").animate({"margin-top":"3rem"}, 500);
-  $("#mylogo").animate({"margin-top":"9rem"}, 500);
-  $("#mylogo").animate({"margin-top":"7rem"}, 250, function(){
-    $("#intro_text").fadeIn(100);
-    $("#code2040").fadeIn(100);
-  });
+  // $("#mylogo").animate({"margin-top":"12rem"}, 700);
+  // $("#mylogo").animate({"margin-top":"3rem"}, 500);
+  // $("#mylogo").animate({"margin-top":"9rem"}, 500);
+  // $("#mylogo").animate({"margin-top":"7rem"}, 250, function(){
+  //   $("#intro_text").fadeIn(100);
+  //   $("#code2040").fadeIn(100);
+  // });
+
+  $("#intro_text").fadeIn(100);
+  $("#code2040").fadeIn(100);
 
   var left = $('#intro_text').offset().left;  // Get the calculated left position
   var left2040 = $('#code2040').offset.left;
@@ -21,11 +24,12 @@ $(document).ready(function(){
     });
   $("#mylogo").click(function(){
     $("#code2040").fadeOut("slow");
-    $("#mylogo").animate({"width":"-=1%","height":"-=1%"});
-    $("#mylogo").animate({"width":"+=1%","height":"+=1%"});
-    $("#mylogo").fadeOut("slow");
-    $("#intro_text").animate({"bottom":"0"}, 1000, function(){
+    $("#mylogo").fadeOut("slow", function(){
+      $("#mylogo2").fadeIn("fast");
+    });
+    $("#intro_text").animate({"bottom":"0"}, 8500, function(){
       $("#intro_text").html("welcome!");
+      $("#mylogo2").fadeOut("fast");
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
         $("#intro_text").css("z-index","-1");
@@ -50,8 +54,12 @@ $(document).ready(function(){
   $("#intro_text").click(function(){
     $("#code2040").fadeOut("slow");
     $("#mylogo").fadeOut("slow");
-    $("#intro_text").animate({"bottom":"0"}, 1000, function(){
+    $("#mylogo").fadeOut("slow", function(){
+      $("#mylogo2").fadeIn("fast");
+    });
+    $("#intro_text").animate({"bottom":"0"}, 8500, function(){
       $("#intro_text").html("welcome!");
+      $("#mylogo2").fadeOut("fast");
       $("#box1").fadeIn("slow", function(){
         $("#intro_text").fadeOut();
 
