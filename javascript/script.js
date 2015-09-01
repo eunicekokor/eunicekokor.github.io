@@ -22,16 +22,19 @@ $(document).ready(function(){
     }, function(){  // Set the left to its calculated position
       $("#intro_text").animate({"right":"-=5%"}, "slow")
     });
+
   $("#mylogo").click(function(){
+    $("#intro_text").fadeOut();
+    $("#mylogo").css({"display":"none"});
     $("#code2040").fadeOut("slow");
-    $("#mylogo").hide("slow", function(){
+    $("#mylogo").hide("fast", function(){
       $("#mylogo2").fadeIn("fast");
     });
     if ($( window ).width() < 668){
-      var wait_time = 6500;
+      var wait_time = 4200;
     }
     else{
-      var wait_time = 8500;
+      var wait_time = 7200;
     }
     $("#intro_text").animate({"bottom":"0"}, wait_time, function(){
       $("#intro_text").html("welcome!");
@@ -58,16 +61,18 @@ $(document).ready(function(){
     });
     });
   $("#intro_text").click(function(){
+    $("#intro_text").fadeOut();
+    $("#mylogo").css({"display":"none"});
     $("#code2040").fadeOut("slow");
     $("#mylogo").fadeOut("slow");
-    $("#mylogo").fadeOut("slow", function(){
+    $("#mylogo").fadeOut("fast", function(){
       $("#mylogo2").fadeIn("fast");
     });
     if ($( window ).width() < 668){
-      var wait_time = 1000;
+      var wait_time = 4200;
     }
     else{
-      var wait_time = 8500;
+      var wait_time = 7200;
     }
     $("#intro_text").animate({"bottom":"0"}, wait_time, function(){
       $("#intro_text").html("welcome!");
