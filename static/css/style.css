@@ -115,7 +115,7 @@ html {
 
 #mylogo2{
   display: none;
-  margin-top: 7em;
+  margin-top: 12em;
   animation: logo-rotate 6s 1s infinite;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
@@ -414,6 +414,11 @@ a:visited{
 
   .under_img{
     margin-top: 90%;
+}
+
+#doing_img{
+  max-width: 120%;
+  width: 120%;
 }
 
   h2 {
