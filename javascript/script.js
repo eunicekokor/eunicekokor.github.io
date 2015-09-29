@@ -28,7 +28,7 @@ $(document).ready(function(){
       var wait_time = 4200;
     }
     else{
-      var wait_time = 7200;
+      var wait_time = 2700;
     }
     $("#intro_text").animate({"bottom":"0"}, wait_time, function(){
       $("#intro_text").html("welcome!");
@@ -66,7 +66,7 @@ $(document).ready(function(){
       var wait_time = 4200;
     }
     else{
-      var wait_time = 7200;
+      var wait_time = 2700;
     }
     $("#intro_text").animate({"bottom":"0"}, wait_time, function(){
       $("#intro_text").html("welcome!");
