@@ -1,200 +1,208 @@
 html {
-  font-family: 'Helvetica 45 Light';
-  color: #424347;
-  background: snow;
-  line-height: 1.618em;
+    font-family: 'Helvetica 45 Light';
+    color: #424347;
+    background: snow;
+    line-height: 1.618em;
 }
-
-.page_content{
-  max-width: 50%;
-  text-align: left;
-
+.page_content {
+    max-width: 50%;
+    text-align: left;
 }
 .page_heading {
-  margin-top: 12rem;
+    margin-top: 7.5rem;
 }
-
-.intro{
-  margin-top: -500px;
+.intro {
+    margin-top: -500px;
 }
-
-.intro_text{
-  margin-top: 10rem;
-  display: none;
+.intro_text {
+    margin-top: 7.5rem;
+    display: none;
 }
-
-#intro_heart{
-  font-size: 2rem;
+#intro_heart {
+    font-size: 2rem;
 }
-
-.fa-heart-o{
-  color: #3080e8;
+.fa-heart-o {
+    color: #3080e8;
 }
-
-strong{
-  color: #3080e8;
+strong {
+    color: #3080e8;
 }
-  h2 {
+h2 {
     font-size: 3rem;
-  }
-  h3 {
+}
+h3 {
     font-size: 1rem;
-  }
-
-
-  .main{
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  }
-
-  .nav{
+}
+.main {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.nav {
     width: 60%;
     position: fixed;
     height: 50px;
-  top: 0;
-  left: 20%;
-  background: #89ACFE;
-/*   background: linear-gradient(to left, #424347, #E5F4E3);
-*/  z-index: 500;
-  }
-
-  #nav{
-  list-style-type: none;
-  display: inline-block;
-  color: #424347;
-  margin: .5em;
-  vertical-align: middle;
+    top: 0;
+    left: 20%;
+    background: #89ACFE;
+    z-index: 500;
+    line-height: 2.5em;
 }
-
-li{
-  padding-left: .25em;
-  font-size: 2em;
-  vertical-align: middle;
-  padding-bottom: .25em;
+#nav {
+    list-style-type: none;
+    display: inline-block;
+    color: #424347;
+    margin: .5em;
+    vertical-align: middle;
 }
-ul li{
-  display: inline;
+li {
+    padding-left: .75em;
+    font-size: 2em;
+    vertical-align: middle;
+    padding-bottom: .25em;
 }
-
-p{
-  font-family: 'Helvetica 45 Light';
-  font-size: 1.4rem;
-  line-height: 2rem;
+ul li {
+    display: inline;
 }
-
+p {
+    font-family: 'Helvetica 45 Light';
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
-
-a:visited{
-  color: inherit;
-  text-decoration: none;
+a:visited {
+    color: inherit;
+    text-decoration: none;
 }
-
-#para_link{
-  color: #89ACFE;
+#para_link {
+    color: #89ACFE;
 }
-
-.active{
-  color: snow;
+.active {
+    color: snow;
 }
-
-
 .nav-item > a {
-  position: relative;
-  text-decoration: none;
+    position: relative;
+    text-decoration: none;
+}
+.nav-item > a:hover {} .nav-item > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #424347;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nav-item > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
-.nav-item > a:hover {
+/**************
+Project Related
+**************/
+.project-grid{
+  display: inline-block;
+  text-align: center;
 }
 
-.nav-item > a:before {
-  content: "";
-  position: absolute;
+.project-feature, img{
+  margin: 1.4em;
+  width: 150px;
+  height: 150px;
+}
+
+.project-feature:hover, img:hover{
+  border-radius: 1px;
+  border: solid;
+  background: white;
+}
+
+.overlay {
   width: 100%;
-  height: 1px;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   bottom: 0;
   left: 0;
-  background-color: #424347;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav-item > a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  position: fixed;
 }
 
 /**************
 Animation Related
 **************/
 
-#mylogo{
+#mylogo {
     animation: logo-rotate-mobile 4s ease-in-out 1;
-  }
-
-  @keyframes logo-rotate-mobile{
-  0%  {
-    transform:rotate(0deg);
-  }
-  25%  {
-    transform:rotate(90deg);
-  }
-  50%  {
-    transform:rotate(180deg);
-  }
-  75%  { 
-    transform:rotate(270deg);
-  }
-  100% {  
-    transform:rotate(360deg);
-  }
 }
-
-.fa-heart-o:hover{
-  animation-duration:.25s;
+@keyframes logo-rotate-mobile {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-
-.fa-heart-o{
-  color: #3080e8;
-  -webkit-transition: .3s cubic-bezier(.35,.07,0,.97);
-  -moz-transition: .3s cubic-bezier(.35,.07,0,.97);
-  -o-transition: .3s cubic-bezier(.35,.07,0,.97);
-  animation: heartbeat infinite;
-  animation-duration:5s;
+.fa-heart-o:hover {
+    animation-duration: .25s;
 }
-
-@keyframes heartbeat{
-  0%  {
-    transform:scale(1);
-    color: lightseagreen;
-  }
-  25%  {
-    transform:scale(.9);
-    color: gold;
-  }
-  50%  {
-    transition-delay: .4s;
-    transform:scale(1);
-    color: indianred;
-  }
-  75%  { 
-    transform:scale(.9);
-    color: darksalmon;
-  }
-  100% {  
-    transform:scale(1);
+.fa-heart-o {
     color: #3080e8;
-  }
+    -webkit-transition: .3s cubic-bezier(.35, .07, 0, .97);
+    -moz-transition: .3s cubic-bezier(.35, .07, 0, .97);
+    -o-transition: .3s cubic-bezier(.35, .07, 0, .97);
+    animation: heartbeat infinite;
+    animation-duration: 5s;
 }
-
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+        color: lightseagreen;
+    }
+    25% {
+        transform: scale(.9);
+        color: gold;
+    }
+    50% {
+        transition-delay: .4s;
+        transform: scale(1);
+        color: indianred;
+    }
+    75% {
+        transform: scale(.9);
+        color: darksalmon;
+    }
+    100% {
+        transform: scale(1);
+        color: #3080e8;
+    }
+}
 /**************
 Media Queries
 **************/
 
+@media (max-width: 968px) {
+    .nav {
+        left: 0;
+        width: 100%;
+        line-height: 2.5em;
+    }
+}

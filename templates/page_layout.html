@@ -25,6 +25,9 @@
 <div class="page_content main">
   {% block results %} {% endblock %}
 </div>
+{% if info['current'] == 'projects' %}
+  <!-- <div class="overlay"></div> -->
+{% endif %}
 
 <div class="footer"></div>
 </center>
