@@ -1,0 +1,28 @@
+{% include "base.html" %}
+<div id = "box3"></div>
+<div id = "box4"></div>
+<center>
+<div id = "box2">
+    {% if info %}
+      <ul id="nav">
+          {% for heading in info['headings'] %}
+            {% if heading['title'] == 'hearts'%}
+            <li>
+              <a href="/{{heading['title']}}"><i class="fa fa-heart-o"></i></a>
+            </li>
+            {% else %}
+          <li><a href="/{{heading['title']}}">
+            {{heading['title']}}</a>
+          </li>
+          {%endif%}
+          {% endfor %}
+      </ul>
+    {% else %}
+      <p> error in loading nav </p>
+    {% endif %}
+</div>
+
+<div id ="box1">
+  {% block results %} {% endblock %}
+</div>
+</center>

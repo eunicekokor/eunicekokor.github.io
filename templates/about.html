@@ -1,0 +1,23 @@
+{% extends "page_layout.html" %}
+{% block results %}
+<div id="about" class="page_content">
+{% if info %}
+  {% for heading in info['headings'] %}
+    {% if heading['title'] == 'about' %}
+      <h2>{{heading['title']}}</h2><h3><strong>{</strong>{{heading['subheading']}}<strong>}</strong></h3>      
+      <p>Going through contruction, everything might just break</p>
+      <p>Welcome to my website. Thanks for stopping by!
+          My name is Eunice Kokor and I'm a rising junior studying <a target="blank" id="para_link" href="http://cs.columbia.edu">Computer Science
+          at Columbia University</a> in NYC and a little bit of <a target="blank" id="para_link" href="http://sel.columbia.edu/">sustainable engineering</a>, too. This summer I'll be hanging around the Bay.</p>
+        <p> Let me know if you'd like to <a id="para_link" href="mailto:eunicekokor@gmail.com?subject=Hey Eunice, Let's Chat!">chat sometime</a>!</p>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <p> error in loading page </p>
+{% endif %}
+
+{% if info['job_status'] == False %}
+  <h2 class="static_shock"><a target="_blank" href="/static/files/resume2015.pdf">looking for a resume?</a></h2>
+{% endif %}
+</div>
+{% endblock %}
