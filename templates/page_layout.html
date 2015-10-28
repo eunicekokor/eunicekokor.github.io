@@ -2,19 +2,19 @@
 <div id = "box3"></div>
 <div id = "box4"></div>
 <center>
-<div id = "box2">
+<div class = "nav">
     {% if info %}
       <ul id="nav">
           {% for heading in info['headings'] %}
-            {% if heading['title'] == 'hearts'%}
-            <li>
-              <a href="/{{heading['title']}}"><i class="fa fa-heart-o"></i></a>
-            </li>
+            {% if heading['title'] == info['current'] %}
+              <li class="nav-item active"><a href="/{{heading['title']}}">
+            {{heading['title']}}</a>
+              </li>
             {% else %}
-          <li><a href="/{{heading['title']}}">
+          <li class="nav-item"><a href="/{{heading['title']}}">
             {{heading['title']}}</a>
           </li>
-          {%endif%}
+            {% endif %}
           {% endfor %}
       </ul>
     {% else %}
@@ -22,7 +22,9 @@
     {% endif %}
 </div>
 
-<div id ="box1">
+<div class="page_content main">
   {% block results %} {% endblock %}
 </div>
+
+<div class="footer"></div>
 </center>

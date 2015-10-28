@@ -15,10 +15,10 @@ website_info = {
    'subheading': ''},
   {
    'title': 'about',
-   'subheading': 'welcome'},
+   'subheading': 'the one & only'},
    {
    'title': 'projects',
-   'subheading': 'projects'},
+   'subheading': 'stuff I made'},
    {
    'title': 'extras',
    'subheading': 'other things!'}
@@ -28,22 +28,27 @@ website_info = {
 
 @app.route("/")
 def home():
+  website_info['current'] = 'home'
   return render_template("index.html", info=website_info)
 
 @app.route("/home")
 def index():
+  website_info['current'] = 'home'
   return render_template("index.html", info=website_info)
 
 @app.route("/about")
 def about():
+  website_info['current'] = 'about'
   return render_template("about.html", info=website_info)
 
 @app.route("/projects")
 def build():
+  website_info['current'] = 'projects'
   return render_template("projects.html", info=website_info)
 
 @app.route("/extras")
 def heart():
+  website_info['current'] = 'extras'
   return render_template("extras.html", info=website_info)
 
 @app.errorhandler(404)
