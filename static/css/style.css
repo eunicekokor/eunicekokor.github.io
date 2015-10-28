@@ -6,21 +6,30 @@ html {
 }
 .page_content {
     max-width: 50%;
-    text-align: left;
+    margin: 0 auto;
+}
+.main {
+    width: 100%;
+    
 }
 .page_heading {
     margin-top: 7.5rem;
 }
-.intro {
-    margin-top: -500px;
+
+.intro{
+    margin-top: 10rem;
+    width: 25rem;
+    height: 25rem;
 }
 .intro_text {
     margin-top: 7.5rem;
-    display: none;
+    font-size: 3rem;
 }
+
 #intro_heart {
     font-size: 2rem;
 }
+
 .fa-heart-o {
     color: #3080e8;
 }
@@ -33,17 +42,13 @@ h2 {
 h3 {
     font-size: 1rem;
 }
-.main {
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
 .nav {
     width: 60%;
     position: fixed;
     height: 50px;
-    top: 0;
+    top: 0%;
     left: 20%;
+    
     background: #89ACFE;
     z-index: 500;
     line-height: 2.5em;
@@ -54,6 +59,7 @@ h3 {
     color: #424347;
     margin: .5em;
     vertical-align: middle;
+    text-align: center;
 }
 li {
     padding-left: .75em;
@@ -119,12 +125,15 @@ Project Related
   margin: 1.4em;
   width: 150px;
   height: 150px;
+  border-bottom: solid;
+  border-radius: 5%;
+  border-color: #424347;
 }
 
-.project-feature:hover, img:hover{
-  border-radius: 1px;
-  border: solid;
-  background: white;
+.project-feature:hover{
+  border-radius: 5%;
+  border-bottom: solid;
+  border-color: #89ACFE;
 }
 
 .overlay {
@@ -136,13 +145,28 @@ Project Related
   left: 0;
   position: fixed;
 }
+.span{
+  text-align: center;
+  margin-top: 10rem;
+}
+.fa-twitter, .fa-github-alt, .fa-linkedin-square{
+  margin-left: 1.5em;
+}
+
+.fa-twitter:hover, .fa-github-alt:hover, .fa-linkedin-square:hover{
+  color: #89ACFE;
+}
+
+#credit{
+  margin-left: 2.5em;
+}
 
 /**************
 Animation Related
 **************/
 
 #mylogo {
-    animation: logo-rotate-mobile 4s ease-in-out 1;
+  z-index: 100;
 }
 @keyframes logo-rotate-mobile {
     0% {
@@ -199,10 +223,34 @@ Animation Related
 Media Queries
 **************/
 
-@media (max-width: 968px) {
+@media screen and (max-width: 923px)  {
     .nav {
         left: 0;
         width: 100%;
         line-height: 2.5em;
     }
+
+    .page_content{
+      max-width: 75%;
+    }
+
+    li {
+      font-size: 1.5em;
+    }
+
+    .intro{
+        margin: 2em auto;
+        width: 25rem;
+        height: 25rem;
+    }
+    .intro_text {
+        margin: 2em auto;
+        font-size: 4rem;
+    }
+
+    .project-feature, img{
+  margin: 1.4em;
+  width: 250px;
+  height: 250px;
+}
 }

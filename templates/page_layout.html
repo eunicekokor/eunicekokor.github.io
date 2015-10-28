@@ -1,13 +1,10 @@
 {% include "base.html" %}
-<div id = "box3"></div>
-<div id = "box4"></div>
-<center>
 <div class = "nav">
     {% if info %}
       <ul id="nav">
           {% for heading in info['headings'] %}
             {% if heading['title'] == info['current'] %}
-              <li class="nav-item active"><a href="/{{heading['title']}}">
+              <li class="nav-item active"><a class="nav-link" href="/{{heading['title']}}">
             {{heading['title']}}</a>
               </li>
             {% else %}
@@ -21,13 +18,18 @@
       <p> error in loading nav </p>
     {% endif %}
 </div>
-
-<div class="page_content main">
+<div class="main">
+<div class="page_content">
   {% block results %} {% endblock %}
+</div>
 </div>
 {% if info['current'] == 'projects' %}
   <!-- <div class="overlay"></div> -->
 {% endif %}
 
-<div class="footer"></div>
-</center>
+<div class="footer">
+
+<div class="span"> <a target='blank' href="http://www.twitter.com/eunicekokor" ><i class="fa fa-2x fa-twitter"></i></a> <a target='blank' href="http://www.github.com/eunicekokor"><i class="fa fa-2x fa-github-alt"></i></a> <a target='blank' href="http://www.linkedin.com/in/eunicekokor"> <i class="fa fa-2x fa-linkedin-square"></i> </a> 
+<br><span id="credit">made with <i class="fa fa-heart-o"></i> by eunice</span>
+</div>
+</div>
