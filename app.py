@@ -12,16 +12,24 @@ website_info = {
   'headings': [
   {
    'title': 'home',
-   'subheading': ''},
+   'subheading': '',
+   'hover_text': 'Takes you to the logo page'
+  },
   {
    'title': 'about',
-   'subheading': 'the one & only'},
-   {
+   'subheading': 'eunicode = euni codes + unicode #techjokes',
+   'hover_text': 'Quick stats'
+  },
+  {
    'title': 'projects',
-   'subheading': 'stuff I made'},
-   {
+   'subheading': 'stuff I made',
+   'hover_text': 'A work in progress :p'
+  },
+  {
    'title': 'extras',
-   'subheading': 'other things!'}
+   'subheading': 'other things!',
+   'hover_text': 'A little extra!'
+   }
   ],
   'job_status': False
 }
@@ -43,6 +51,7 @@ def about():
 
 @app.route("/projects")
 def build():
+  #TODO: change the way project information sourced
   website_info['current'] = 'projects'
   return render_template("projects.html", info=website_info)
 

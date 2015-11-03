@@ -4,11 +4,11 @@
       <ul id="nav">
           {% for heading in info['headings'] %}
             {% if heading['title'] == info['current'] %}
-              <li class="nav-item active"><a class="nav-link" href="/{{heading['title']}}">
+              <li class="nav-item active"><a title="{{heading['hover_text']}}" class="nav-link" href="/{{heading['title']}}">
             {{heading['title']}}</a>
               </li>
             {% else %}
-          <li class="nav-item"><a href="/{{heading['title']}}">
+          <li class="nav-item"><a title="{{heading['hover_text']}}" href="/{{heading['title']}}">
             {{heading['title']}}</a>
           </li>
             {% endif %}
