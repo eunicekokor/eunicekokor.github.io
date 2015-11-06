@@ -5,15 +5,26 @@ $(document).ready(function(){
     setTimeout(function(){ window.location = '/about'; }, delay);
   });
 
+
   $(".organization_list").click(function(){
     var class_detail = "";
     var important_class = "";
     var class_detail = $(this).attr("class");
     class_detail = class_detail.split(' ');
     var important_class = class_detail[1];
-    console.log(important_class);
     $("." + important_class+".organization_detail").toggle();
-  })
+  });
+  $(".organization_group").click(function(){
+    var class_detail = "";
+    var important_class = "";
+    var class_detail = $(this).attr("class");
+    class_detail = class_detail.split(' ');
+    var important_class = class_detail[1];
+    $("." + important_class+".organization_detail").toggle();
+  });
+  $(".organization_detail").click(function(){
+    $(this).toggle();
+  });
 
 //   $( ".page_heading" ).click(function() {
 //   $( ".subheading" ).toggle( "explode" );
