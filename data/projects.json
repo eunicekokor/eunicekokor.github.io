@@ -1,24 +1,42 @@
 {
   "project_list": [{
-      "title": "eunico.de",
+      "title": "eunicode",
       "description": "My personal website, the one you're on!",
       "languages": ["Flask", "Html/Css", "Jquery", "Fun"],
-      "url": "https://www.eunico.de",
-      "img_url": "static/images/projects/ek-wallpaper.png"
+      "urls": {
+        "github": "https://github.com/eunicekokor/eunicekokor.github.io",
+        "link" : "eunico.de",
+        "img": "static/images/projects/ek-wallpaper.png"
+        }
       },
       {
         "title": "Feelings",
         "description": "Created an application with my 9 year old sister after watching Inside Out.",
         "languages": ["HTML", "CSS", "Flask", "JavaScript", "Creativity"],
-        "url": "https://whitekoat.herokuapp.com/feelings",
-        "img_url": "static/images/projects/feelings.png"
+        "urls": {
+          "github": "https://github.com/eunicekokor/whitecoat/",
+          "link" : "http://whitekoat.herokuapp.com/feelings",
+          "img": "static/images/projects/feelings.png"
+        }
       },
       {
         "title": "HairSOS",
         "description": "Created at NSBE's national hackathon and this was my first hack.",
-        "languages": ["Bootstrap", "CSS", "Flask", "JavaScript", "Creativity"],
-        "url": "http://bit.ly/HairSOS",
-        "img_url": "static/images/projects/hairsos.png"
-      }
-      ]
+        "languages": ["Bootstrap", "Flask", "Yelp API", "Google Maps API"],
+        "urls": {
+          "github": "https://github.com/KhalidRich/NSBEHairSOS",
+          "link" : "http://bit.ly/HairSOS",
+          "img": "static/images/projects/hairsos.png"
+        }
+      },
+      {
+        "title": "StoneSoup",
+        "description": "Created at DevFest, Columbia's Annual Hackathon in about 5 hours! We dynamically take queries of ingredients and spit out recipies based on those incredients and sort them by close fit & popularity",
+        "languages": ["Bootstrap", "Flask", "food2fork API"],
+        "urls": {
+          "github": "https://github.com/kanikaverma/StoneSoup/blob/master/app.py",
+          "link" : null,
+          "img": "static/images/projects/stonesoup.png"
+        }
+      }]
 }

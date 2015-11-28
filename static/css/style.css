@@ -85,6 +85,12 @@ a:visited {
 #para_link {
     color: #4877DE;
 }
+
+#para_link:hover{
+  border-bottom: solid;
+  border-color: #ccc;
+    border-width: thin;
+}
 .active {
     color: snow;
 }
@@ -145,9 +151,9 @@ Project Related
 
 .languages{
   float: right;
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 1.25em;
+  right: 0;
+  margin: 1.5em 0;
+  padding: 0 1.5em;
 }
 
 .projects-lang{
@@ -156,16 +162,24 @@ Project Related
   background: #4877DE;
   color: snow;
   padding: .25em;
-  font-size: .75em;
+  font-size: 1em;
 }
 
 .projects-grid{
   left: 0;
 }
 
+.fa-2x {
+  margin: 0 .25em;
+}
+
 .projects-feature{
   display: inline-block;
-  margin: 2em;
+  margin: 0em;
+  padding: 0;
+  border-left: solid;
+    border-color: transparent;
+    border-width: thin;
 }
 .projects-feature:hover{
 /*  background: floralwhite;
@@ -185,10 +199,10 @@ Project Related
   width: 65%;
   margin: 0;
   padding: 0;
-      position: relative;
+  position: relative;
 }
 
-p, .projects-info{
+p.projects-info{
   font-size: 1em;
   line-height: 1em;
 }
