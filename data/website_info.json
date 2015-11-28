@@ -1,0 +1,25 @@
+{
+  "headings": [
+  {
+   "title": "home",
+   "subheading": "",
+   "hover_text": "Takes you to the logo page"
+  },
+  {
+   "title": "about",
+   "subheading": "eunicode = euni codes + unicode #techjokes",
+   "hover_text": "Quick stats"
+  },
+  {
+   "title": "projects",
+   "subheading": "stuff I made",
+   "hover_text": "A work in progress :p"
+  },
+  {
+   "title": "extras",
+   "subheading": "other things!",
+   "hover_text": "A little extra!"
+   }
+  ],
+  "job_status": true
+}

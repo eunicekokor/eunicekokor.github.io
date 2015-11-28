@@ -1,0 +1,16 @@
+{
+  "project_list": [{
+      "title": "test project",
+      "description": "test description where things are very well",
+      "languages": ["HTML", "CSS", "JSON", "Creativity"],
+      "url": null,
+      "img_url": "static/images/projects/design.png"
+      },
+      {
+        "title": "Feelings",
+        "description": "Created an application with my 9 year old sister after watching Inside Out",
+        "languages": ["HTML", "CSS", "Flask", "JavaScript", "Creativity"],
+        "url": "https://whitekoat.herokuapp.com/feelings",
+        "img_url": "static/images/projects/mites14.jpg"
+      }]
+}

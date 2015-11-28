@@ -14,6 +14,7 @@ $(document).ready(function(){
     var important_class = class_detail[1];
     $("." + important_class+".organization_detail").toggle();
   });
+
   $(".organization_group").click(function(){
     var class_detail = "";
     var important_class = "";
@@ -25,6 +26,10 @@ $(document).ready(function(){
   $(".organization_detail").click(function(){
     $(this).toggle();
   });
+
+  $(".fa-bars").click(function(){
+    $(this).css('animation-iteration-count',1);
+  })
 
 //   $( ".page_heading" ).click(function() {
 //   $( ".subheading" ).toggle( "explode" );
