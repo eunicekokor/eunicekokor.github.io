@@ -135,9 +135,9 @@ a:visited {
 }
 
 .organization_group:hover{
-        border-bottom: solid;
+        border-left: solid;
     border-color: #ccc;
-    border-width: thin;
+    border-width: medium;
 }
 /**************
 Project Related
@@ -168,8 +168,11 @@ Project Related
   margin: 2em;
 }
 .projects-feature:hover{
-  background: floralwhite;
-}
+/*  background: floralwhite;
+*/border-left: solid;
+    border-color: #ccc;
+    border-width: thin;
+    }
 
 .projects-feature-img{
   max-width:30%;
@@ -188,11 +191,6 @@ Project Related
 p, .projects-info{
   font-size: 1em;
   line-height: 1em;
-}
-
-.project-feature:hover{
-  border-bottom: solid;
-  border-color: #4877DE;
 }
 
 .overlay {
