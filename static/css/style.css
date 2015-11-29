@@ -151,11 +151,11 @@ Project Related
 .grid{
   left: 0;
 }
-
 .grid:after{
   content: "";
   display: table;
   clear: both;
+  position: relative;
 }
 
 .col-2-3 {
@@ -222,14 +222,24 @@ p.projects-info{
 }
 [class*='col-']:last-of-type {
   padding-right: 0;
+  margin-top: 2em;
 }
-
 .grid-pad {
   padding: 20px 0 20px 20px;
 }
 
 .fa-external-link, .fa-github {
   margin: 0 .25em;
+}
+
+.footer {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  margin-left: -125px;
+  margin-top: -50px;
+  left: 50%;
+  bottom: 0%;
 }
 
 .overlay {
@@ -351,7 +361,7 @@ Media Queries
     }
 
     .page_content{
-      max-width: 75%;
+      max-width: 100%;
     }
 
     li {
@@ -368,8 +378,8 @@ Media Queries
         font-size: 4rem;
     }
 
-    .project-feature, img{
-  margin: 1.4em;
+    img.project-feature {
+  margin: 0;
   width: 250px;
   height: 250px;
 }
