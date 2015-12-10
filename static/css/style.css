@@ -84,12 +84,15 @@ a:visited {
 }
 #para_link {
     color: #4877DE;
+    border-bottom: solid;
+    border-color: #4877DE;
+    border-width: medium;
 }
 
 #para_link:hover{
+  color: #ccc;
   border-bottom: solid;
   border-color: #ccc;
-    border-width: thin;
 }
 .active {
     color: snow;
