@@ -5,7 +5,7 @@
       "languages": ["Flask", "Html/Css", "Jquery", "Fun"],
       "urls": {
         "github": "https://github.com/eunicekokor/eunicekokor.github.io",
-        "link" : "eunico.de",
+        "link" : "http://eunico.de",
         "img": "static/images/projects/ek-wallpaper.png"
         }
       },
