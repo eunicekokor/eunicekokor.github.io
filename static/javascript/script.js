@@ -4,6 +4,11 @@ $(document).ready(function(){
     $("#mylogo").css('animation','logo-rotate-mobile 4s ease-in-out 1');
     setTimeout(function(){ window.location = '/about'; }, delay);
   });
+  
+  $(".intro_text").click(function(){
+    $("#mylogo").css('animation','logo-rotate-mobile 4s ease-in-out 1');
+    setTimeout(function(){ window.location = '/about'; }, delay);
+  });
 
 
   $(".organization_list").click(function(){
