@@ -4,7 +4,7 @@ $(document).ready(function(){
     $("#mylogo").css('animation','logo-rotate-mobile 4s ease-in-out 1');
     setTimeout(function(){ window.location = '/about'; }, delay);
   });
-  
+
   $(".intro_text").click(function(){
     $("#mylogo").css('animation','logo-rotate-mobile 4s ease-in-out 1');
     setTimeout(function(){ window.location = '/about'; }, delay);
@@ -29,6 +29,10 @@ $(document).ready(function(){
     $("." + important_class+".organization_detail").toggle();
   });
   $(".organization_detail").click(function(){
+    $(this).toggle();
+  });
+
+  $(".poem_detail").click(function(){
     $(this).toggle();
   });
 
