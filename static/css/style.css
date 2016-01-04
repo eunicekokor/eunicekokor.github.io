@@ -124,8 +124,9 @@ a:visited {
 .inline-header {
     display: inline;
 }
-.organization_list{
 
+.organization_list{
+  height: 10%;
 }
 
 .organization_list:hover{
