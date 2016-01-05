@@ -125,8 +125,9 @@ a:visited {
     display: inline;
 }
 
-.organization_list{
-  height: 10%;
+.arrow {
+
+  float: right;
 }
 
 .organization_list:hover{

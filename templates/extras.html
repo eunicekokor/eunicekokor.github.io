@@ -1,249 +1,258 @@
-{% extends "page_layout.html" %}
-{% block results %}
+{% extends "page_layout.html" %} {% block results %}
 <div id="extras">
-{% if info %}
-  {% for heading in info['headings'] %}
-    {% if heading['title'] == 'extras' %}
-      <h2 class="page_heading"><i class="fa fa-heart-o"></i></h2>
-
-      <h3 class="subheading"><strong>{</strong>passions<strong>}</strong></h3>
-        <p>I care about organizations and people trying to make the world a better place! I like to dabble in poetry on the side and I listen to a ton of music!</p>
-        <p>If you are in NYC, <a id="para_link" href="mailto:eunicekokor@gmail.com?subject=Hey Eunice. Let's get coffee!">grab coffee</a> with me! I love learning/doing new things with and about people from all over (:</p>
-
-        <h1 class="inline-header"> <b>Poems </b></h1>
-        <ul style="font-size: .75em">
-          <li><a href="#marbles">Marbles</a></li>
-          <li><a href="#crux">The Crux of Us</a></li>
-          <li><a href="#breathe">I Just Can't Breathe</a></li>
-          <li><a href="#self">Self Portrait</a></li>
-        </ul>
-
-        <div id="marbles" title="Click to read more!" class="organization_group">
-        <p class="organization_list p3"> Marbles</p><small> written for my <a id="para_link" href="http://arts.columbia.edu/writing/undergraduate">poetry class @Columbia</a></small>
-        <p class="organization_detail p3">
-        It was a game of freedom<br>
-I loved to play.<br>
-The goal was to use <br>
-your single marble, flick<br>
-Aim, and free the others from the concave center.<br>
-
-<br>I loved how those tiny translucent spheres rolled — <br>
-dissolved from their positions at my touch<br>
-Ricochet, miss, I still knew<br>
-there was a chance of them getting out together.<br>
-
-<br>Everyday at recess we would sit:<br>
-Seven or Eight of us in a tight semi-circle<br>
-and one of us would take the biggest stick they could find<br>
-then drive it into the dirt.<br>
-Slowly, carefully, trying without error<br>
-to carve the perfect circle.<br>
-
-<br>This was a part I observed closely.<br>
-Some kids would practice,<br>
-Practicing again and again.<br>
-I remember those intense squints <br>
-as they held the stick tightly <br>
-and tried to trace a perfect circle.<br>
-
-<br>On those days with the ‘practicers’<br>
-we’d end up with ovals, squiggles,<br>
-some lopsided squares here and there.<br>
-Nonetheless we’d still play<br>
-and play and play<br>
-until the recess bell sounded.<br>
-
-<br>I was 3 when we came here.<br>
-Pockets empty by the American standard.<br>
-Marbles weren’t expensive —<br>
-Kids discarded and lost them. <br>
-I searched and found them,<br>
-playing in dirt patches alone.<br>
-
-<br>One day one of the practicers drew his final ugly shape and spat<br>
-Let's quit.<br>
-Let’s play another game.<br>
-
-<br>I told them all to hold on.<br>
-I came back with a plastic perfectly circular hoop and placed it in the dirt.<br>
-Lifted it up,<br>
-And so we played.<br>
-
-
-        </p></div>
-        <div id="crux" title="Click to read more!" class="organization_group">
-        <p class="organization_list p1"> The Crux of Us</p><small> written for my <a id="para_link" href="http://arts.columbia.edu/writing/undergraduate">poetry class @Columbia</a></small>
-        <p class="organization_detail p1">
-        The body grieves, splitting nailed limbs through frozen skin<br>
-        what was once the sensual call of the fond lover<br>
-        who caressed her curves and cradled bodily desires<br>
-
-<br><br>
-        Now every inch of bone, begotten.<br>
-Revitalized with hot breath and anxious palms—<br>
-thick, ripe bronze fruit, picked clean for mortal pleasures.<br>
-
-<br><br>
-        He picked up the sickle, an apostrophe of time<br>
-slashing through buttonwoods, arriving<br>
-at clear, empty pastures of planetary revelry<br>
-
-<br><br>
-        The surrounding air was breathing: ringing, oscillations<br>
-hammered, smacking into eager ears<br>
-spoken of how deep and flowing is your babbling love<br>
-
-<br><br>
-        Mosaics depicting the shrinking blue-green azury<br>
-transformed into the flecked Grecian morsels, the<br>
-drowsy steep mountain gurgled, spoken out in protest<br>
-
-<br><br>
-        The crop, an artifice of his craft has been yielded.<br>
-As his flesh laid to rest, the day’s work well done<br>
-his master in awe, but withholding congratulatory praise.<br>
-
-<br><br>
-       Paltry rewards are returned for an eternity,<br>
-but we all cannot be joined in the holy land:<br>
-One, at least, must sacrifice to bear the weight and carry us there.<br>
-
-        </p></div>
-
-        <div id="breathe" title="Click to read more!" class="organization_group"><p class="organization_list p2"> I just can't breathe</p><small> originally on <a id="para_link" href="http://medium.com/@eunicekokor/i-just-can-t-breathe-23084fac66f4">Medium</a> </small><p class="organization_detail p2">
-        the air is thick<br>
-        with ashes<br>
-        can you see it?<br><br>
-        my eyes burn<br>
-        from their constant,<br>
-        irritating flakes,<br>
-        clogging up the air<br>
-        I want to ask again<br>
-        can you see it too?<br>
-        but. I. just. can’t. breathe.<br><br>
-        news stories on the daily<br>
-        smeared with injustice<br>
-        of unfairness<br>
-        of our people<br>
-        do you see it?<br>
-        or are you blind?<br>
-        did He create you<br>
-        to be on the side<br>
-        of what’s wrong,<br>
-        or what is right?<br>
-        will you join in<br>
-        and sing?<br><br>
-        cause I’ve sung and sung<br>
-        and tried to sing just<br>
-        one more note but<br>
-        I just can’t breathe anymore.<br>
-        I came to you today<br>
-        to whisper, to gasp<br><br>
-        just.<br>
-        a.<br>
-        few.<br>
-        last.<br>
-        words.<br><br>
-        I want to scream it loud<br>
-        from the mountain tops<br>
-        so that it may be known<br>
-        from the Rockies to the<br>
-        Himalayas and every book<br>
-        to be written I want to tell<br>
-        them that<br><br>
-        my people weep<br>
-        my people suffer<br>
-        more than what is told<br>
-        I would have said it long ago<br>
-        but do we dare to dream?<br>
-        as a dream once promised,<br>
-        a dream easy to fulfill on paper?<br>
-        do we dare to speak<br>
-        of wrongs that cannot be righted<br>
-        when right before our eyes<br>
-        and ears for our progeny to bear<br>
-        our hope is ripped away<br>
-        and it seems like no one cares<br>
-        because why try to speak<br>
-        when it’s all too senseless<br>
-        and everything we know<br>
-        has failed us?<br>
-        when you call us to the stand<br>
-        and make fun of our speech<br>
-        smothering the only voice<br>
-        we have ?<br>
-        laugh! at our thuggishness<br>
-        and systematic abuse<br>
-        as the ash gets thicker<br>
-        the blame spreads more:<br>
-        it’s our poverty, our demeanor,<br>
-        our love of Jordan’s & ‘hip-hop’<br>
-        that kills our children,<br>
-        our daughters & our sons<br>
-        and at the end of the day,<br>
-        there’s so much more!<br>
-        to explain,<br><br>
-        so much more to say<br><br>
-        but the air is pitch black<br>
-        and I’m smothered<br>
-        my throat, tightening, my eyes, crying,<br>
-        I’m roaring, with anger but you won’t hear me because<br>
-        I.<br>
-        just.<br>
-        can’t.<br>
-        breathe.
-        </p>
-        </div>
-
-        <div id="self" title="Click to read more!" class="organization_group"><p class="organization_list p4"> Self Portrait</p><small>  written for my <a id="para_link" href="http://arts.columbia.edu/writing/undergraduate">poetry class @Columbia</a></small><p class="organization_detail p4">
-        IV.<br>
-They say she is cool,<br>
-Like the light breeze you feel<br>
-After stepping away<br>
-From the blazing fire<br>
-And its roaring flames<br>
-On the pine-littered campground.<br><br>
-
-III.<br>
-They’ve seen her flitter to-and-fro,<br>
-Like children and pets<br>
-On Christmas Eve<br>
-While young mothers<br>
-Sigh, gathering decorations<br>
-In preparation for the occasion.<br><br>
-
-II.<br>
-Some say she gleams in the sunlight,<br>
-Like the tape that covers the old rusty bike<br>
-That you’ve tried to fix <br>
-Once, twice, or more?<br>
-Ransacking the cluttered garage<br>
-In the process.<br><br>
-
-I.<br>
-They speak of her hope,<br>
-As nesting in a foreign tree <br>
-That towers its neighbors.<br>
-But unknown to most,<br>
-Its many braches silently crack<br>
-Falling into the dense mountainside bush.<br></p>
-
-        </div>
-
-        <p>more coming soon! </p><br>
-
-        <h1 class="inline-header"> Organizations </h1>
-
-        <div title="Click to read more!" class="organization_group"><p class="organization_list adi"> Application Development Initiative</p><small> coolest club
-        <a id="para_link" href="http://www.adicu.com/"> @Columbia</a> </small><p class="organization_detail adi">A group of students at Columbia working to strengthen the technical community on campus through workshops, mentorship opportunities, and more! I did a ton of social media oversight as well as event + program planning</p> </div>
-
-        <div title="Click to read more!" class="organization_group"><p class="organization_list she"> She++ College Ambassadors</p> <small> Find out how to <a id="para_link" href="http://www.sheplusplus.org/">#include</a> </small><p class="organization_detail she">More technology puns! This is an awesome group working towards inclusivity in all realms of tech, especially within our university's Computer Science Departments. I was the Columbia Ambassador for a year and got to meet other women and people working towards reaching out for the goal of equal opportunity and support in our education.</p></div>
-
-        <div title="Click to read more!" class="organization_group"><p class="organization_list code">Code2040 Fellows Program </p><small> learn more <a id="para_link" href="http://www.code2040.org">here</a> </small><p class="organization_detail code">I had the most incredible opportunity to be immersed within the technology sphere in Silicon Valley surrounded by Black and Latinx founders, engineers, friends, and role models. I couldn't trade the experience for anything else!</p></div>
-    {% endif %}
-  {% endfor %}
-{% else %}
+  {% if info %} {% for heading in info['headings'] %} {% if heading['title'] == 'extras' %}
+  <h2 class="page_heading"><i class="fa fa-heart-o"></i></h2>
+  <h3 class="subheading"><strong>{</strong>passions<strong>}</strong></h3>
+  <p>I care about organizations and people trying to make the world a better place! I like to dabble in poetry on the side and I listen to a ton of music!</p>
+  <p>If you are in NYC, <a id="para_link" href="mailto:eunicekokor@gmail.com?subject=Hey Eunice. Let's get coffee!">grab coffee</a> with me! I love learning/doing new things with and about people from all over (:</p>
+  <h1 class="inline-header"> <b>Poems </b></h1>
+  <ul style="font-size: .75em">
+    <li><a href="#marbles">Marbles</a></li>
+    <li><a href="#crux">The Crux of Us</a></li>
+    <li><a href="#breathe">I Just Can't Breathe</a></li>
+    <li><a href="#self">Self Portrait</a></li>
+  </ul>
+  <div id="marbles" title="Click to read more!" class="organization_group">
+    <p class="organization_list p3"> Marbles <span class="arrow"><i class="fa fa-chevron-down"></i></span> </p><small> written for my <a id="para_link" href="http://arts.columbia.edu/writing/undergraduate">poetry class @Columbia</a></small>
+    <p class="organization_detail p3">
+      It was a game of freedom
+      <br> I loved to play.
+      <br> The goal was to use
+      <br> your single marble, flick
+      <br> Aim, and free the others from the concave center.
+      <br>
+      <br>I loved how those tiny translucent spheres rolled —
+      <br> dissolved from their positions at my touch
+      <br> Ricochet, miss, I still knew
+      <br> there was a chance of them getting out together.
+      <br>
+      <br>Everyday at recess we would sit:
+      <br> Seven or Eight of us in a tight semi-circle
+      <br> and one of us would take the biggest stick they could find
+      <br> then drive it into the dirt.
+      <br> Slowly, carefully, trying without error
+      <br> to carve the perfect circle.
+      <br>
+      <br>This was a part I observed closely.
+      <br> Some kids would practice,
+      <br> Practicing again and again.
+      <br> I remember those intense squints
+      <br> as they held the stick tightly
+      <br> and tried to trace a perfect circle.
+      <br>
+      <br>On those days with the ‘practicers’
+      <br> we’d end up with ovals, squiggles,
+      <br> some lopsided squares here and there.
+      <br> Nonetheless we’d still play
+      <br> and play and play
+      <br> until the recess bell sounded.
+      <br>
+      <br>I was 3 when we came here.
+      <br> Pockets empty by the American standard.
+      <br> Marbles weren’t expensive —
+      <br> Kids discarded and lost them.
+      <br> I searched and found them,
+      <br> playing in dirt patches alone.
+      <br>
+      <br>One day one of the practicers drew his final ugly shape and spat
+      <br> Let's quit.
+      <br> Let’s play another game.
+      <br>
+      <br>I told them all to hold on.
+      <br> I came back with a plastic perfectly circular hoop and placed it in the dirt.
+      <br> Lifted it up,
+      <br> And so we played.
+      <br>
+    </p>
+  </div>
+  <div id="crux" title="Click to read more!" class="organization_group">
+    <p class="organization_list p1"> The Crux of Us <span class="arrow"><i class="fa fa-chevron-down"></i></span></p><small> written for my <a id="para_link" href="http://arts.columbia.edu/writing/undergraduate">poetry class @Columbia</a></small>
+    <p class="organization_detail p1">
+      The body grieves, splitting nailed limbs through frozen skin
+      <br> what was once the sensual call of the fond lover
+      <br> who caressed her curves and cradled bodily desires
+      <br>
+      <br>
+      <br> Now every inch of bone, begotten.
+      <br> Revitalized with hot breath and anxious palms—
+      <br> thick, ripe bronze fruit, picked clean for mortal pleasures.
+      <br>
+      <br>
+      <br> He picked up the sickle, an apostrophe of time
+      <br> slashing through buttonwoods, arriving
+      <br> at clear, empty pastures of planetary revelry
+      <br>
+      <br>
+      <br> The surrounding air was breathing: ringing, oscillations
+      <br> hammered, smacking into eager ears
+      <br> spoken of how deep and flowing is your babbling love
+      <br>
+      <br>
+      <br> Mosaics depicting the shrinking blue-green azury
+      <br> transformed into the flecked Grecian morsels, the
+      <br> drowsy steep mountain gurgled, spoken out in protest
+      <br>
+      <br>
+      <br> The crop, an artifice of his craft has been yielded.
+      <br> As his flesh laid to rest, the day’s work well done
+      <br> his master in awe, but withholding congratulatory praise.
+      <br>
+      <br>
+      <br> Paltry rewards are returned for an eternity,
+      <br> but we all cannot be joined in the holy land:
+      <br> One, at least, must sacrifice to bear the weight and carry us there.
+      <br>
+    </p>
+  </div>
+  <div id="breathe" title="Click to read more!" class="organization_group">
+    <p class="organization_list p2"> I just can't breathe<span class="arrow"><i class="fa fa-chevron-down"></i></span></p><small> originally on <a id="para_link" href="http://medium.com/@eunicekokor/i-just-can-t-breathe-23084fac66f4">Medium</a> </small>
+    <p class="organization_detail p2">
+      the air is thick
+      <br> with ashes
+      <br> can you see it?
+      <br>
+      <br> my eyes burn
+      <br> from their constant,
+      <br> irritating flakes,
+      <br> clogging up the air
+      <br> I want to ask again
+      <br> can you see it too?
+      <br> but. I. just. can’t. breathe.
+      <br>
+      <br> news stories on the daily
+      <br> smeared with injustice
+      <br> of unfairness
+      <br> of our people
+      <br> do you see it?
+      <br> or are you blind?
+      <br> did He create you
+      <br> to be on the side
+      <br> of what’s wrong,
+      <br> or what is right?
+      <br> will you join in
+      <br> and sing?
+      <br>
+      <br> cause I’ve sung and sung
+      <br> and tried to sing just
+      <br> one more note but
+      <br> I just can’t breathe anymore.
+      <br> I came to you today
+      <br> to whisper, to gasp
+      <br>
+      <br> just.
+      <br> a.
+      <br> few.
+      <br> last.
+      <br> words.
+      <br>
+      <br> I want to scream it loud
+      <br> from the mountain tops
+      <br> so that it may be known
+      <br> from the Rockies to the
+      <br> Himalayas and every book
+      <br> to be written I want to tell
+      <br> them that
+      <br>
+      <br> my people weep
+      <br> my people suffer
+      <br> more than what is told
+      <br> I would have said it long ago
+      <br> but do we dare to dream?
+      <br> as a dream once promised,
+      <br> a dream easy to fulfill on paper?
+      <br> do we dare to speak
+      <br> of wrongs that cannot be righted
+      <br> when right before our eyes
+      <br> and ears for our progeny to bear
+      <br> our hope is ripped away
+      <br> and it seems like no one cares
+      <br> because why try to speak
+      <br> when it’s all too senseless
+      <br> and everything we know
+      <br> has failed us?
+      <br> when you call us to the stand
+      <br> and make fun of our speech
+      <br> smothering the only voice
+      <br> we have ?
+      <br> laugh! at our thuggishness
+      <br> and systematic abuse
+      <br> as the ash gets thicker
+      <br> the blame spreads more:
+      <br> it’s our poverty, our demeanor,
+      <br> our love of Jordan’s & ‘hip-hop’
+      <br> that kills our children,
+      <br> our daughters & our sons
+      <br> and at the end of the day,
+      <br> there’s so much more!
+      <br> to explain,
+      <br>
+      <br> so much more to say
+      <br>
+      <br> but the air is pitch black
+      <br> and I’m smothered
+      <br> my throat, tightening, my eyes, crying,
+      <br> I’m roaring, with anger but you won’t hear me because
+      <br> I.
+      <br> just.
+      <br> can’t.
+      <br> breathe.
+    </p>
+  </div>
+  <div id="self" title="Click to read more!" class="organization_group">
+    <p class="organization_list p4"> Self Portrait <span class="arrow"><i class="fa fa-chevron-down"></i></span></p><small>  written for my <a id="para_link" href="http://arts.columbia.edu/writing/undergraduate">poetry class @Columbia</a></small>
+    <p class="organization_detail p4">
+      IV.
+      <br> They say she is cool,
+      <br> Like the light breeze you feel
+      <br> After stepping away
+      <br> From the blazing fire
+      <br> And its roaring flames
+      <br> On the pine-littered campground.
+      <br>
+      <br> III.
+      <br> They’ve seen her flitter to-and-fro,
+      <br> Like children and pets
+      <br> On Christmas Eve
+      <br> While young mothers
+      <br> Sigh, gathering decorations
+      <br> In preparation for the occasion.
+      <br>
+      <br> II.
+      <br> Some say she gleams in the sunlight,
+      <br> Like the tape that covers the old rusty bike
+      <br> That you’ve tried to fix
+      <br> Once, twice, or more?
+      <br> Ransacking the cluttered garage
+      <br> In the process.
+      <br>
+      <br> I.
+      <br> They speak of her hope,
+      <br> As nesting in a foreign tree
+      <br> That towers its neighbors.
+      <br> But unknown to most,
+      <br> Its many braches silently crack
+      <br> Falling into the dense mountainside bush.
+      <br>
+    </p>
+  </div>
+  <p>more coming soon! </p>
+  <br>
+  <h1 class="inline-header"> Organizations </h1>
+  <div title="Click to read more!" class="organization_group">
+    <p class="organization_list adi"> Application Development Initiative<span class="arrow"><i class="fa fa-chevron-down"></i></span></p><small> coolest club
+        <a id="para_link" href="http://www.adicu.com/"> @Columbia</a> </small>
+    <p class="organization_detail adi">A group of students at Columbia working to strengthen the technical community on campus through workshops, mentorship opportunities, and more! I did a ton of social media oversight as well as event + program planning</p>
+  </div>
+  <div title="Click to read more!" class="organization_group">
+    <p class="organization_list she"> She++ College Ambassadors <span class="arrow"><i class="fa fa-chevron-down"></i></span></p> <small> Find out how to <a id="para_link" href="http://www.sheplusplus.org/">#include</a> </small>
+    <p class="organization_detail she">More technology puns! This is an awesome group working towards inclusivity in all realms of tech, especially within our university's Computer Science Departments. I was the Columbia Ambassador for a year and got to meet other women and people working towards reaching out for the goal of equal opportunity and support in our education.</p>
+  </div>
+  <div title="Click to read more!" class="organization_group">
+    <p class="organization_list code">Code2040 Fellows Program <span class="arrow"><i class="fa fa-chevron-down"></i></span> </p><small> learn more <a id="para_link" href="http://www.code2040.org">here</a> </small>
+    <p class="organization_detail code">I had the most incredible opportunity to be immersed within the technology sphere in Silicon Valley surrounded by Black and Latinx founders, engineers, friends, and role models. I couldn't trade the experience for anything else!</p>
+  </div>
+  {% endif %} {% endfor %} {% else %}
   <p> error in loading page </p>
-{% endif %}
+  {% endif %}
 </div>
 {% endblock %}
