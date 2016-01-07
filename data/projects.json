@@ -1,42 +1,142 @@
 {
-  "project_list": [{
+  "2015": [
+    {
       "title": "eunicode",
       "description": "My personal website, the one you're on!",
-      "languages": ["Flask", "Html/Css", "Jquery", "Fun"],
+      "languages": [
+        "Flask",
+        "Html/Css",
+        "Jquery",
+        "Fun"
+      ],
+      "type": "Side Project",
       "urls": {
         "github": "https://github.com/eunicekokor/eunicekokor.github.io",
-        "link" : "http://eunico.de",
+        "link": "http://eunico.de",
         "img": "static/images/projects/ek-wallpaper.png"
-        }
-      },
-      {
-        "title": "Feelings",
-        "description": "Created an application with my 9 year old sister after watching Inside Out.",
-        "languages": ["HTML", "CSS", "Flask", "JavaScript", "Creativity"],
-        "urls": {
-          "github": "https://github.com/eunicekokor/whitecoat/",
-          "link" : "http://whitekoat.herokuapp.com/feelings",
-          "img": "static/images/projects/feelings.png"
-        }
-      },
-      {
-        "title": "HairSOS",
-        "description": "Created at NSBE's national hackathon and this was my first hack.",
-        "languages": ["Bootstrap", "Flask", "Yelp API", "Google Maps API"],
-        "urls": {
-          "github": "https://github.com/KhalidRich/NSBEHairSOS",
-          "link" : "http://bit.ly/HairSOS",
-          "img": "static/images/projects/hairsos.png"
-        }
-      },
-      {
-        "title": "StoneSoup",
-        "description": "Created at DevFest, Columbia's Annual Hackathon in about 5 hours! We dynamically take queries of ingredients and spit out recipies based on those incredients and sort them by close fit & popularity",
-        "languages": ["Bootstrap", "Flask", "food2fork API"],
-        "urls": {
-          "github": "https://github.com/kanikaverma/StoneSoup/blob/master/app.py",
-          "link" : null,
-          "img": "static/images/projects/stonesoup.png"
-        }
-      }]
+      }
+    },
+    {
+      "title": "Got Issues",
+      "description": "As a Code2040 Fellow, I assisted with network platforms within the technology team, helping understand data from the Civic Issue Finder. Learned a lot about the civic technology ecosystem with a local and international context.",
+      "type": "Summer Project @ CFA",
+      "languages": [
+        "Python",
+        "HTML/CSS",
+        "Flask",
+        "JavaScript",
+        "Google Charting API"
+      ],
+      "urls": {
+        "github": "https://github.com/codeforamerica/got-issues/",
+        "link": "http://got-issues.herokuapp.com/",
+        "img": null
+      }
+    },
+    {
+      "title": "Code2040 Fellow",
+      "description": "I had the most incredible opportunity to be immersed within the technology sphere in Silicon Valley surrounded by Black and Latinx founders, engineers, friends, and role models. I couldn't trade the experience for anything else!",
+      "type": "unicode tech++",
+      "languages": null,
+      "urls": {
+        "github": null,
+        "link": "http://www.code2040.org",
+        "img": null
+      }
+    },
+    {
+      "title": "She++ Ambassador",
+      "description": "I had the most incredible opportunity to be immersed within the technology sphere in Silicon Valley surrounded by Black and Latinx founders, engineers, friends, and role models. I couldn't trade the experience for anything else!",
+      "type": "unicode tech++",
+      "languages": null,
+      "urls": {
+        "github": null,
+        "link": "http://www.sheplusplus.org/ambassadors2015/",
+        "img": null
+      }
+    },
+    {
+      "title": "ADI Committee Member",
+      "description": "A group of students at Columbia working to strengthen the technical community on campus through workshops, mentorship opportunities, and more! I did a ton of social media oversight as well as event + program planning",
+      "type": "unicode tech++",
+      "languages": null,
+      "urls": {
+        "github": "https://github.com/adicu",
+        "link": "http://www.adicu.com",
+        "img": null
+      }
+    },
+    {
+      "title": "Feelings",
+      "description": "Created an application with my 9 year old sister after watching Inside Out.",
+      "languages": [
+        "HTML",
+        "CSS",
+        "Flask",
+        "JavaScript",
+        "Creativity"
+      ],
+      "type": "Side Project",
+      "urls": {
+        "github": "https://github.com/eunicekokor/whitecoat/",
+        "link": "http://whitekoat.herokuapp.com/feelings",
+        "img": "static/images/projects/feelings.png"
+      }
+    },
+    {
+      "title": "StoneSoup",
+      "description": "Created at DevFest, Columbia's Annual Hackathon in about 5 hours! We dynamically take queries of ingredients and spit out recipies based on those incredients and sort them by close fit & popularity",
+      "languages": [
+        "Bootstrap",
+        "Flask",
+        "food2fork API"
+      ],
+      "type": "Hackathon Project",
+      "urls": {
+        "github": "https://github.com/kanikaverma/StoneSoup/blob/master/app.py",
+        "link": null,
+        "img": "static/images/projects/stonesoup.png"
+      }
+    }
+  ],
+  "2014": [
+    {
+      "title": "HairSOS",
+      "description": "Created at NSBE's national hackathon and this was my first hack.",
+      "languages": [
+        "Bootstrap",
+        "Flask",
+        "Yelp API",
+        "Google Maps API"
+      ],
+      "type": "Hackathon Project",
+      "urls": {
+        "github": "https://github.com/KhalidRich/NSBEHairSOS",
+        "link": "http://bit.ly/HairSOS",
+        "img": "static/images/projects/hairsos.png"
+      }
+    },
+    {
+      "title": "Teaching Assistant @ MITES",
+      "description": "I served as a mentor, teaching assistant, and residential counselor for the MITES program.",
+      "languages": null,
+      "type": "Job",
+      "urls": {
+        "github": null,
+        "link": "https://oeop.mit.edu/programs/mites",
+        "img": null
+      }
+    },
+    {
+      "title": "Lab Consultant @CUIT",
+      "description": "I debugged computer equipment and dealt with technical issues weekly.",
+      "languages": null,
+      "type": "Job",
+      "urls": {
+        "github": null,
+        "link": null,
+        "img": null
+      }
+    }
+  ]
 }

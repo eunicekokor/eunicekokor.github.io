@@ -1,226 +1,91 @@
 html {
     font-family: 'Helvetica 45 Light';
     color: #424347;
-    background: #FEFEFE;
+
     line-height: 1.618em;
 }
-.page_content {
-    max-width: 50%;
-    margin: 0 auto;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(216,19,138,.8),rgba(65,105,225,.8)),url("http://jessica.is/assets/imgs/pattern.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
-.main {
-    width: 100%;
-}
-.page_heading {
-    margin-top: 7.5rem;
-}
-
-.intro{
-    margin-top: 10rem;
-    width: 25rem;
-    height: 25rem;
-}
-.intro_text {
-    margin-top: 7.5rem;
-    font-size: 3rem;
+.contain{
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-#intro_heart {
-    font-size: 2rem;
+hr {
+    border: solid #fff;
+    opacity: .4;
+    border-width: 5px 0 0;
+    clear: both;
+    height: 0;
+    margin: 16px auto 12px;
+    width: 20px;
+}
+.grid {
+  margin: 0;
+  padding: 0;
+ top: 70%;
+ background: blue;
+ position: relative;
 }
 
-.fa-heart-o {
-    color: #3080e8;
-}
-strong {
-    color: #3080e8;
-}
-h2 {
-    font-size: 3rem;
-}
-h3 {
-    font-size: 1rem;
-}
-.nav {
-    width: 100%;
-    position: fixed;
-    height: 50px;
-    top: 0%;
-    left: 0%;
-
-    background: #4877DE;
-    z-index: 500;
-    line-height: 2.5em;
-    box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
-}
-#nav {
-    list-style-type: none;
-    color: #424347;
-    margin: .5em;
-    vertical-align: middle;
+.showcase {
+    height: 400px;
+    background-position: center;
+    background: #272734;
     text-align: center;
-}
-li {
-    padding-left: .75em;
-    font-size: 1.5em;
-    vertical-align: middle;
-    padding-bottom: .25em;
-}
-ul li {
-    display: inline;
-}
-p {
-    font-family: 'Helvetica 45 Light';
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-}
-a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-#para_link {
-    color: #4877DE;
-    border-bottom: solid;
-    border-color: #4877DE;
-    border-width: medium;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#para_link:hover{
-  color: #ccc;
-  border-bottom: solid;
-  border-color: #4877DE;
-}
-.active {
-    color: snow;
-}
-.nav-item > a {
-    position: relative;
-    text-decoration: none;
-}
-.nav-item > a:hover {} .nav-item > a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: -2px;
-    left: 0;
-    background-color: #424347;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-.nav-item > a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.inline-header {
-    display: inline;
-}
-
-.arrow {
-
-  float: right;
-}
-
-.organization_list:hover{
-    color: #3080e8;
-}
-
-.organization_detail{
-  display: none;
-    font-size: 1em;
-    line-height: 1.3em;
-}
-
-.poem_detail{
-    display: none;
-    font-size: 1em;
-    line-height: 1.3em;
-}
-
-.organization_group{
-    box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
-    padding: 1em;
-    margin-bottom: .75em;
-}
-
-.organization_group:hover{
-        border-left: solid;
-    border-color: #ccc;
-    border-width: medium;
-}
-/**************
-Project Related
-**************/
-.grid{
+.splash {
+  top: 0;
   left: 0;
-}
-.grid:after{
-  content: "";
-  display: table;
-  clear: both;
-  position: relative;
-}
-
-.col-2-3 {
-  width: 66.66%;
+  background-image: url('/static/images/header.jpg');
+  height: 70%;
+  position: absolute;
+  width: 100%;
+  background-position: center top;
 }
 
-.col-1-3 {
-  width: 33.33%;
+.splash-header{
+  font-family: 'Circular Air Book';
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3.5rem;
+  font-weight: 600;
+  z-index: 3;
+  text-transform: uppercase;
+  color: white;
+  border: solid medium white;
+  padding: .5em;
+}
+
+.splash-overlay {
+  top: 0;
+  left: 0;
+  background: rgba(123, 23, 121, 0.8);
+  height: 70%;
+  position: absolute;
+  width: 100%;
+  background-position: center top;
 }
 
 [class*='col-'] {
   float: left;
-}
-
-.languages{
-  float: bottom;
-  margin: 1.5em 0;
-}
-
-.projects-feature{
-/*  display: inline-block;
-  width: 100%;
-  height: 150px;
-  border-left: solid;
-    border-color: transparent;
-    border-width: thin;*/
-}
-
-.projects-info{
-/*  height: 150px;
-  float: right;
-  width: 65%;
-  margin: 0;
-  padding: 0;
-  position: relative;*/
-}
-
-p.projects-info{
-  font-size: 1em;
-  line-height: 1em;
-}
-
-.proj-title{
-  font-size: 2em;
-}
-
-.projects-lang{
-  font-family: 'Circular Air Book';
-  text-transform: uppercase;
-  background: #4877DE;
-  color: snow;
-  padding: .25em;
-  font-size: 1em;
+  position: relative;
 }
 
 *, *:after, *:before {
@@ -229,182 +94,104 @@ p.projects-info{
   box-sizing: border-box;
 }
 
-[class*='col-'] {
-  padding-right: 20px;
+.col-2-3 {
+  width: 66.66%;
 }
-[class*='col-']:last-of-type {
-  padding-right: 0;
-  margin-top: 2em;
+.col-1-3 {
+  width: 33.33%;
 }
-.grid-pad {
-  padding: 20px 0 20px 20px;
-}
-
-.fa-external-link, .fa-github {
-  margin: 0 .25em;
-}
-
-.footer {
-  position: relative;
-  width: 250px;
-  height: 100px;
-  margin-left: -125px;
-  margin-top: -50px;
-  left: 50%;
-  bottom: 0%;
-}
-
-.overlay {
+.col-3-3 {
   width: 100%;
-  height: 30%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  bottom: 0;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content{
+  top: 70%;
   left: 0;
-  position: fixed;
-}
-.span{
-  text-align: center;
-  margin-top: 10rem;
-}
-.fa-twitter, .fa-github-alt, .fa-linkedin-square{
-  margin-left: 1.5em;
+  height: auto;
+  position: absolute;
+  width: 100%;
+  background: rgb(0,0,0)
 }
 
-.fa-twitter:hover, .fa-github-alt:hover, .fa-linkedin-square:hover{
-    color: #4877DE;
-}
-
-#credit{
-  margin-left: 2.5em;
-}
-
-.fa-bars{
-    animation: bars-rotate;
-    animation-duration: 1s;
-    animation-iteration-count: 0;
-}
-
-.fa-bars:hover{
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-    animation: bars-rotate;
-    animation-duration: 1s;
-    animation-iteration-count: 0;
+.text {
+  display: block;
+  text-align: left;
+  width: 80%;
 
 }
 
-@keyframes bars-rotate {
-    100% {
-        -ms-transform: rotate(-270deg); /* IE 9 */
-    -webkit-transform: rotate(-270deg); /* Chrome, Safari, Opera */
-        transform: rotate(-270deg);
-    }
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
 }
 
-/**************
-Animation Related
-**************/
-
-#mylogo {
-  z-index: 100;
-}
-@keyframes logo-rotate-mobile {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(90deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(270deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-.fa-heart-o:hover {
-    animation-duration: .25s;
-}
-.fa-heart-o {
-    color: #3080e8;
-    -webkit-transition: .3s cubic-bezier(.35, .07, 0, .97);
-    -moz-transition: .3s cubic-bezier(.35, .07, 0, .97);
-    -o-transition: .3s cubic-bezier(.35, .07, 0, .97);
-    animation: heartbeat infinite;
-    animation-duration: 5s;
-}
-@keyframes heartbeat {
-    0% {
-        transform: scale(1);
-        color: lightseagreen;
-    }
-    25% {
-        transform: scale(.9);
-        color: gold;
-    }
-    50% {
-        transition-delay: .4s;
-        transform: scale(1);
-        color: indianred;
-    }
-    75% {
-        transform: scale(.9);
-        color: darksalmon;
-    }
-    100% {
-        transform: scale(1);
-        color: #3080e8;
-    }
-}
-/**************
-Media Queries
-**************/
-
-@media screen and (max-width: 923px)  {
-    .nav {
-        left: 0;
-        width: 100%;
-        line-height: 2.5em;
-        height: 75px;
-    }
-
-    #nav {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    margin: 0em;
-    vertical-align: baseline;
-    text-align: justify;
-}
-li {
-    padding: 0em;
-    font-size: .75em;
-    vertical-align: bottom;
-    margin: 0 5% 0 5%;
+.funcolor{
+  background: green;
 }
 
-    .page_content{
-      max-width: 100%;
-    }
-
-    .intro{
-        margin: 2em auto;
-        width: 25rem;
-        height: 25rem;
-    }
-    .intro_text {
-        margin: 2em auto;
-        font-size: 4rem;
-    }
-
-    img.project-feature {
-  margin: 0;
-  width: 250px;
-  height: 250px;
+.box-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
+
+.small-1 {
+  width: 33%;
+  left: 0;
+  float: left;
+  background: pink;
+}
+
+.small-2 {
+  width: 33%;
+  left: 33%;
+  background: green;
+}
+
+.small-3 {
+  width: 34%;
+  left: 66%;
+  background: yellow;
+}
+
+.small-1,.small-2,.small-3 {
+  position: absolute;
+  padding: 5em 0;
+}
+
+.medium-1 {
+  position: absolute;
+  height: 100%;
+  width: 66%;
+  left: 0;
+  float: left;
+}
+
+.medium-2 {
+  position: absolute;
+  height: 100%;
+  width: 66%;
+  left: 33%;
+  float: right;
 }
