@@ -9,7 +9,6 @@ website_info = None
 @app.route("/")
 def home():
   website_info = get_website_info()
-  website_info['current'] = 'home'
   return render_template("index.html", info=website_info)
 
 def get_website_info():

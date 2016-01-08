@@ -1,0 +1,15 @@
+@media screen and (min-width: 641) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640) {
+  html, body {
+    font-size: 14px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}

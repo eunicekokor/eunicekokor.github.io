@@ -1,0 +1,20 @@
+@font-face {
+font-family: 'Helvetica 65 Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica 65 Medium'), url('../fonts/HelveticaNeue-Medium.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Helvetica 45 Light';
+font-style: normal;
+font-weight: normal;
+src: local('Helvetica 45 Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Circular Air Book';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Air Book'), url('../fonts/Circular_Air-Book.woff') format('woff');
+}

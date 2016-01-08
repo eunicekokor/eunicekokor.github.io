@@ -1,15 +1,17 @@
 {
   "2015": [
     {
+      "id": "web",
       "title": "eunicode",
       "description": "My personal website, the one you're on!",
+      "short": "My personal website, the one you're on!",
       "languages": [
         "Flask",
         "Html/Css",
         "Jquery",
         "Fun"
       ],
-      "type": "Side Project",
+      "type": "sideproject",
       "urls": {
         "github": "https://github.com/eunicekokor/eunicekokor.github.io",
         "link": "http://eunico.de",
@@ -19,7 +21,8 @@
     {
       "title": "Got Issues",
       "description": "As a Code2040 Fellow, I assisted with network platforms within the technology team, helping understand data from the Civic Issue Finder. Learned a lot about the civic technology ecosystem with a local and international context.",
-      "type": "Summer Project @ CFA",
+      "short": "Helped understand data from the Civic Issue Finder",
+      "type": "job",
       "languages": [
         "Python",
         "HTML/CSS",
@@ -36,7 +39,8 @@
     {
       "title": "Code2040 Fellow",
       "description": "I had the most incredible opportunity to be immersed within the technology sphere in Silicon Valley surrounded by Black and Latinx founders, engineers, friends, and role models. I couldn't trade the experience for anything else!",
-      "type": "unicode tech++",
+      "short": "My summer of immersion in the tech sphere in Silicon Valley",
+      "type": "unicode",
       "languages": null,
       "urls": {
         "github": null,
@@ -46,8 +50,9 @@
     },
     {
       "title": "She++ Ambassador",
-      "description": "I had the most incredible opportunity to be immersed within the technology sphere in Silicon Valley surrounded by Black and Latinx founders, engineers, friends, and role models. I couldn't trade the experience for anything else!",
-      "type": "unicode tech++",
+      "description": "More technology puns! This is an awesome group working towards inclusivity in all realms of tech, especially within our university's Computer Science Departments. I was the Columbia Ambassador for a year and got to meet other women and people working towards reaching out for the goal of equal opportunity and support in our education.",
+      "short": "Columbia ambassador creating programs to support inclusivity in our CS Dept",
+      "type": "unicode",
       "languages": null,
       "urls": {
         "github": null,
@@ -58,7 +63,8 @@
     {
       "title": "ADI Committee Member",
       "description": "A group of students at Columbia working to strengthen the technical community on campus through workshops, mentorship opportunities, and more! I did a ton of social media oversight as well as event + program planning",
-      "type": "unicode tech++",
+      "short": "Supporting tech community @Columbia",
+      "type": "unicode",
       "languages": null,
       "urls": {
         "github": "https://github.com/adicu",
@@ -67,8 +73,10 @@
       }
     },
     {
+      "id": "feel",
       "title": "Feelings",
       "description": "Created an application with my 9 year old sister after watching Inside Out.",
+      "short": "Creating apps with my little sister!",
       "languages": [
         "HTML",
         "CSS",
@@ -76,7 +84,7 @@
         "JavaScript",
         "Creativity"
       ],
-      "type": "Side Project",
+      "type": "sideproject",
       "urls": {
         "github": "https://github.com/eunicekokor/whitecoat/",
         "link": "http://whitekoat.herokuapp.com/feelings",
@@ -84,14 +92,16 @@
       }
     },
     {
+      "id": "stone",
       "title": "StoneSoup",
       "description": "Created at DevFest, Columbia's Annual Hackathon in about 5 hours! We dynamically take queries of ingredients and spit out recipies based on those incredients and sort them by close fit & popularity",
+      "short": "Hackathon project to get recipes from incredients",
       "languages": [
         "Bootstrap",
         "Flask",
         "food2fork API"
       ],
-      "type": "Hackathon Project",
+      "type": "sideproject",
       "urls": {
         "github": "https://github.com/kanikaverma/StoneSoup/blob/master/app.py",
         "link": null,
@@ -101,15 +111,17 @@
   ],
   "2014": [
     {
+      "id": "hair",
       "title": "HairSOS",
       "description": "Created at NSBE's national hackathon and this was my first hack.",
+      "short": "My first app, we (tried to) map relevant hair dressers fit for you",
       "languages": [
         "Bootstrap",
         "Flask",
         "Yelp API",
         "Google Maps API"
       ],
-      "type": "Hackathon Project",
+      "type": "sideproject",
       "urls": {
         "github": "https://github.com/KhalidRich/NSBEHairSOS",
         "link": "http://bit.ly/HairSOS",
@@ -119,8 +131,9 @@
     {
       "title": "Teaching Assistant @ MITES",
       "description": "I served as a mentor, teaching assistant, and residential counselor for the MITES program.",
+      "short": "mentor, teaching assistant, and residential counselor",
       "languages": null,
-      "type": "Job",
+      "type": "job",
       "urls": {
         "github": null,
         "link": "https://oeop.mit.edu/programs/mites",
@@ -130,8 +143,9 @@
     {
       "title": "Lab Consultant @CUIT",
       "description": "I debugged computer equipment and dealt with technical issues weekly.",
+      "short": "debugged computer equipment",
       "languages": null,
-      "type": "Job",
+      "type": "job",
       "urls": {
         "github": null,
         "link": null,

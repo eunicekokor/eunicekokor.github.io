@@ -1,0 +1,35 @@
+.fa-heart-o:hover {
+    animation-duration: .25s;
+}
+
+.fa-heart-o {
+    color: #3080e8;
+    -webkit-transition: .3s cubic-bezier(.35, .07, 0, .97);
+    -moz-transition: .3s cubic-bezier(.35, .07, 0, .97);
+    -o-transition: .3s cubic-bezier(.35, .07, 0, .97);
+    animation: heartbeat infinite;
+    animation-duration: 5s;
+}
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+        color: lightseagreen;
+    }
+    25% {
+        transform: scale(.9);
+        color: gold;
+    }
+    50% {
+        transition-delay: .4s;
+        transform: scale(1);
+        color: indianred;
+    }
+    75% {
+        transform: scale(.9);
+        color: darksalmon;
+    }
+    100% {
+        transform: scale(1);
+        color: #3080e8;
+    }
+}
