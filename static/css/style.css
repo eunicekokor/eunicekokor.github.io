@@ -71,7 +71,6 @@ p {
   background-position: center;
   background: #272734;
   text-align: center;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +238,7 @@ p {
   font-family: 'Circular Air Book';
   text-transform: uppercase;
   display: block;
-  font-size: .75em;
+  font-size: 1.25em;
   letter-spacing: .3em;
 }
 
@@ -252,16 +251,43 @@ p {
 
 .job {
   background: #5C2751;
+  color: #fff;
 }
 
 .sideproject {
   background: #8884FF;
+  color: #fff;
 }
 
 .unicode {
   background: #6457A6;
+  color: #fff;
 }
 
+.peach {
+  background: #f9dbbd;
+  color: black;
+}
+
+.seagreen {
+ background: #00ffd0;
+ color: #fff;
+}
+
+.orange {
+ background: #fca17d;
+ color: #fff;
+}
+
+.ruddy {
+  background: #ff5666;
+  color: #fff;
+}
+
+.rust {
+  background: #da627d;
+  color: #fff;
+}
 
 /*Backgrounds*/
 

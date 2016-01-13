@@ -9,7 +9,8 @@ website_info = None
 @app.route("/")
 def home():
   website_info = get_website_info()
-  return render_template("index.html", info=website_info)
+  colors=["peach", "rust", "orange", "ruddy", "seagreen"]
+  return render_template("index.html", info=website_info, colors=colors)
 
 def get_website_info():
   global website_info
