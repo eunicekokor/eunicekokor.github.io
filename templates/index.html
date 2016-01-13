@@ -2,7 +2,7 @@
 
 <div class="splash">
 
-  <h1 class="splash-header">Eunic<i class="fa fa-heart-o"></i>de</h1>
+  <h1 class="splash-header">Euni<span class="hide-mobile">c<i class="fa fa-heart-o"></i>de</span><span class="mobile-only">ce</span></h1>
 </div>
 <div class="splash-overlay"></div>
 
@@ -68,6 +68,13 @@
 </div>
 
 <style>
+
+@media all and (min-width: 651px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
  @media all and (max-width:800px){
         .col-1{ width: 33.33%;    }
         .col-2{ width: 50%;        }
@@ -86,6 +93,9 @@
     }
 
 @media all and (max-width:650px){
+  .hide-mobile {
+    display: none;
+  }
         .col-1{ width: 50%;        }
         .col-1-4{ width: 100%;    }
         .col-2-3{ width: 100%;    }
