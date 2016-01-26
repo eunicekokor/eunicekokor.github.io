@@ -56,6 +56,24 @@ def heart():
   website_info['current'] = 'extras'
   return render_template("extras.html", info=website_info)
 
+@app.route('/stonesoup', methods=["GET", "POST"])
+def get_results():
+  recipes = []
+  if request.method == 'POST':
+    food_query = request.form['text']
+    if ',' in food_query:
+      food_query = food_query.replace(',', '+')
+      food_query = food_query.replace(' ', '')
+
+    food_query_processed = food_query.lower()
+    request_string = "https://community-food2fork.p.mashape.com/search?key=fb087049410336a1a564b4d90772884a&q={}".format(food_query_processed)
+    response = requests.get(request_string, headers = {
+    "X-Mashape-Key": "wBtGgGCJ65mshgqXuQksMa9vpohbp1RzC3AjsnKXEHKeWKqZH3",
+    "Accept": "application/json"
+    }).json()
+    recipes = response['recipes']
+  return render_template('stonesoup.html', recipes=recipes)
+
 @app.errorhandler(404)
 def page_not_found(error):
   return render_template('404.html'), 404

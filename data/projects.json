@@ -12,13 +12,32 @@
       {
         "title": "Feelings",
         "description": "Created an application with my 9 year old sister after watching Inside Out.",
-        "languages": ["HTML", "CSS", "Flask", "JavaScript", "Creativity"],
+        "languages": ["HTML", "CSS", "Flask", "JavaScript", "PostgreSQL", "Creativity"],
         "urls": {
           "github": "https://github.com/eunicekokor/whitecoat/",
           "link" : "http://whitekoat.herokuapp.com/feelings",
           "img": "static/images/projects/feelings.png"
         }
       },
+      {
+      "title": "Got Issues",
+      "description": "As a Code2040 Fellow, I assisted with network platforms within the technology team, helping understand data from the Civic Issue Finder. Learned a lot about the civic technology ecosystem with a local and international context.",
+      "short": "Helped understand data from the Civic Issue Finder",
+      "type": "job",
+      "languages": [
+        "Python",
+        "HTML/CSS",
+        "Flask",
+        "JavaScript",
+        "Google Charting API",
+        "PostgreSQL"
+      ],
+      "urls": {
+        "github": "https://github.com/codeforamerica/got-issues/",
+        "link": "http://got-issues.herokuapp.com/",
+        "img": "static/images/projects/gotissues.png"
+      }
+    },
       {
         "title": "HairSOS",
         "description": "Created at NSBE's national hackathon and this was my first hack.",
@@ -35,7 +54,7 @@
         "languages": ["Bootstrap", "Flask", "food2fork API"],
         "urls": {
           "github": "https://github.com/kanikaverma/StoneSoup/blob/master/app.py",
-          "link" : null,
+          "link" : "/stonesoup",
           "img": "static/images/projects/stonesoup.png"
         }
       }]

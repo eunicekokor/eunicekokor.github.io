@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>StoneSoup</title>
+  <link rel="stylesheet" href="qunit.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script src="qunit.js"></script>
+  <script src="myscript.js"></script>
+  <script src="test.js"></script>
+
+</head>
+<body style="background: #7fffd4;">
+  <h1 id="qunit-header">StoneSoup</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+  <center>
+    <form class="form-inline" method="post" action="/stonesoup">
+      <input class="form-control" name="text" placeholder="ingredient(s)">
+      <button class="btn btn-default">Submit</button>
+    </form>
+
+  <br>
+
+  {% if not recipes %}
+  <h1> Whoops </h1>
+  <h2> No recipes found for those incredients! </h2>
+  <h3> Please search with other ingredients! </h3>
+
+  {% elif recipes == "initial" %}
+  <h1> Search for something yummy! </h1>
+
+  {% else %}
+
+  {% for x in recipes %}
+
+    <h3>
+      <a href="{{x['source_url']}}"> {{x['title']}} </a>
+    </h3>
+    <br>
+
+    <img src="{{x['image_url']}}">
+    <br>
+    <br>
+
+  {% endfor %}
+
+  {% endif %}
+  </center>
+  </div>
+</body>
+</html>
+a
